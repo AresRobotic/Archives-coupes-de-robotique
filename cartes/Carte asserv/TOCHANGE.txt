@@ -1,0 +1,2 @@
+Si on veut utiliser les TF des LMD18200, il faut utiliser des ADUM1401 qui permettent d'avoir une piste dans l'autre sens.
+

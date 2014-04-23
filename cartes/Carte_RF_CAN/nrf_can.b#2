@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.001" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -20,8 +20,8 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -38,7 +38,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -123,10 +123,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="7.6454" y1="10.2616" x2="41.0212" y2="10.5664" width="0" layer="20"/>
-<wire x1="41.0212" y1="10.5664" x2="40.31" y2="52.06" width="0" layer="20"/>
-<wire x1="40.31" y1="52.06" x2="7.62" y2="52.06" width="0" layer="20"/>
-<wire x1="7.62" y1="52.06" x2="7.6454" y2="10.2616" width="0" layer="20"/>
+<wire x1="7.3914" y1="11.6332" x2="41.453" y2="11.7094" width="0" layer="20"/>
+<wire x1="41.453" y1="11.7094" x2="41.58" y2="51.044" width="0" layer="20"/>
+<wire x1="41.58" y1="51.044" x2="7.62" y2="50.6884" width="0" layer="20"/>
+<wire x1="7.62" y1="50.6884" x2="7.3914" y2="11.6332" width="0" layer="20"/>
 <polygon width="0.3048" layer="43">
 <vertex x="20.4978" y="21.209"/>
 <vertex x="20.4216" y="21.209"/>
@@ -700,9 +700,9 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <element name="CAN_CONTROL" library="MCP2515_MT" package="SO18L" value="MCP2515SO" x="23.8506" y="19.5326" rot="R90"/>
 <element name="ARDUINO_MINI" library="nrf_can" package="ARDUINO_PRO_MINI" value="" x="20.32" y="31.75" rot="MR0"/>
 <element name="NRF24L01" library="SparkFun-Connectors" package="2X4" value="M04X2" x="15.748" y="35.2806" rot="R270"/>
-<element name="JUMPER_CAN" library="SparkFun-Passives" package="1X03" value="JUMPER-3PTH" x="35.8902" y="19.558" rot="R270"/>
+<element name="_CAN" library="SparkFun-Passives" package="1X03" value="JUMPER-3PTH" x="35.8902" y="19.558" rot="R270"/>
 <element name="CAN" library="jt-con-micromatch" package="AMP-215079-8" value="micromatch8p" x="35.0774" y="34.8488" rot="R270"/>
-<element name="U$2" library="SparkFun-PowerIC" package="SOT23-5" value="3.3V/150mA" x="23.368" y="40.0812">
+<element name="3.3V" library="SparkFun-PowerIC" package="SOT23-5" value="3.3V/150mA" x="23.368" y="40.0812">
 <attribute name="PROD_ID" value="VREG-00822" x="23.368" y="40.0812" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C5" library="SparkFun-Capacitors" package="0805" value="1uF" x="20.8026" y="42.799" rot="R180"/>
@@ -766,8 +766,8 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <contactref element="ARDUINO_MINI" pad="VCC"/>
 <contactref element="CAN" pad="7"/>
 <contactref element="CAN" pad="2"/>
-<contactref element="U$2" pad="1"/>
-<contactref element="U$2" pad="3"/>
+<contactref element="3.3V" pad="1"/>
+<contactref element="3.3V" pad="3"/>
 <wire x1="22.5806" y1="38.227" x2="22.5806" y2="38.7604" width="0.15" layer="1"/>
 <wire x1="22.9362" y1="37.8714" x2="22.5806" y2="38.227" width="0.15" layer="1"/>
 <wire x1="24.1808" y1="37.8714" x2="22.9362" y2="37.8714" width="0.15" layer="1"/>
@@ -836,7 +836,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <vertex x="41.91" y="52.07"/>
 </polygon>
 <contactref element="C5" pad="2"/>
-<contactref element="U$2" pad="2"/>
+<contactref element="3.3V" pad="2"/>
 </signal>
 <signal name="CAN_TXD">
 <contactref element="CAN_CONTROL" pad="1"/>
@@ -894,7 +894,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 </signal>
 <signal name="CANH">
 <contactref element="TRANSCEIVER" pad="7"/>
-<contactref element="JUMPER_CAN" pad="3"/>
+<contactref element="_CAN" pad="3"/>
 <contactref element="CAN" pad="5"/>
 <contactref element="CAN" pad="4"/>
 <wire x1="34.8488" y1="30.7594" x2="33.9598" y2="29.8704" width="0.15" layer="16"/>
@@ -954,8 +954,8 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 </signal>
 <signal name="N$7">
 <contactref element="R2" pad="2"/>
-<contactref element="JUMPER_CAN" pad="2"/>
-<contactref element="JUMPER_CAN" pad="2"/>
+<contactref element="_CAN" pad="2"/>
+<contactref element="_CAN" pad="2"/>
 <wire x1="34.671" y1="17.0688" x2="32.7152" y2="19.0246" width="0.15" layer="16"/>
 <wire x1="35.7378" y1="17.0688" x2="34.671" y2="17.0688" width="0.15" layer="16"/>
 <wire x1="32.7152" y1="19.0246" x2="32.6246" y2="19.1262" width="0.15" layer="16"/>
@@ -1017,12 +1017,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 </signal>
 <signal name="3.3V">
 <contactref element="NRF24L01" pad="2"/>
-</signal>
-<signal name="NRF_IRQ">
-<contactref element="ARDUINO_MINI" pad="6"/>
-</signal>
-<signal name="N$4">
-<contactref element="U$2" pad="5"/>
+<contactref element="3.3V" pad="5"/>
 <contactref element="C5" pad="1"/>
 <wire x1="22.0472" y1="42.4942" x2="21.8694" y2="42.672" width="0.15" layer="1"/>
 <wire x1="22.0472" y1="42.1386" x2="22.0472" y2="42.4942" width="0.15" layer="1"/>
@@ -1030,6 +1025,32 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <wire x1="22.4028" y1="41.4274" x2="22.4028" y2="41.783" width="0.15" layer="1"/>
 <wire x1="21.8694" y1="42.672" x2="21.7026" y2="42.799" width="0.15" layer="1"/>
 <wire x1="22.4028" y1="41.4274" x2="22.418" y2="41.3813" width="0.15" layer="1"/>
+<wire x1="19.0246" y1="39.116" x2="22.0472" y2="42.1386" width="0.15" layer="1"/>
+<wire x1="17.0688" y1="39.116" x2="19.0246" y2="39.116" width="0.15" layer="1"/>
+<wire x1="17.0688" y1="39.116" x2="17.018" y2="39.0906" width="0.15" layer="1"/>
+</signal>
+<signal name="NRF_IRQ">
+<contactref element="ARDUINO_MINI" pad="6"/>
+<contactref element="NRF24L01" pad="8"/>
+<wire x1="22.9362" y1="25.6032" x2="17.0688" y2="31.4706" width="0.15" layer="16"/>
+<wire x1="28.2702" y1="25.6032" x2="22.9362" y2="25.6032" width="0.15" layer="16"/>
+<wire x1="29.337" y1="26.67" x2="28.2702" y2="25.6032" width="0.15" layer="16"/>
+<wire x1="29.337" y1="31.6484" x2="29.337" y2="26.67" width="0.15" layer="16"/>
+<wire x1="28.0924" y1="31.6484" x2="29.337" y2="31.6484" width="0.15" layer="16"/>
+<wire x1="17.0688" y1="31.4706" x2="17.018" y2="31.4706" width="0.15" layer="16"/>
+<wire x1="28.0924" y1="31.6484" x2="27.94" y2="31.75" width="0.15" layer="16"/>
+</signal>
+<signal name="N$1">
+<via x="9.652" y="48.768" extent="1-16" drill="2.1"/>
+</signal>
+<signal name="N$4">
+<via x="9.906" y="13.97" extent="1-16" drill="2.1"/>
+</signal>
+<signal name="N$6">
+<via x="39.37" y="13.97" extent="1-16" drill="2.1"/>
+</signal>
+<signal name="N$8">
+<via x="39.37" y="49.022" extent="1-16" drill="2.1"/>
 </signal>
 </signals>
 </board>

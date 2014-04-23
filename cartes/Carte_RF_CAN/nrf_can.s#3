@@ -3059,9 +3059,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="FRAME1" library="frames" deviceset="A4P-LOC" device=""/>
 <part name="ARDUINO_MINI" library="nrf_can" deviceset="ARDUINO_PRO_MINI" device="NRF24L01"/>
 <part name="NRF24L01" library="SparkFun-Connectors" deviceset="M04X2" device=""/>
-<part name="JUMPER_CAN" library="SparkFun-Passives" deviceset="JUMPER-3" device="PTH"/>
-<part name="CAN_MICROMATCH" library="jt-con-micromatch" deviceset="MMATCH-8-*" device="PTH"/>
-<part name="U$2" library="SparkFun-PowerIC" deviceset="V_REG_MIC5205" device="3.3V" value="3.3V/150mA"/>
+<part name="_CAN" library="SparkFun-Passives" deviceset="JUMPER-3" device="PTH"/>
+<part name="CAN" library="jt-con-micromatch" deviceset="MMATCH-8-*" device="PTH" value="micromatch8p"/>
+<part name="3.3V" library="SparkFun-PowerIC" deviceset="V_REG_MIC5205" device="3.3V" value="3.3V/150mA"/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
@@ -3087,9 +3087,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="FRAME1" gate="G$1" x="-53.34" y="-68.58"/>
 <instance part="ARDUINO_MINI" gate="G$1" x="-15.24" y="137.16"/>
 <instance part="NRF24L01" gate="G$1" x="55.88" y="106.68"/>
-<instance part="JUMPER_CAN" gate="G$1" x="15.24" y="12.7" rot="R90"/>
-<instance part="CAN_MICROMATCH" gate="G$1" x="-20.32" y="-15.24"/>
-<instance part="U$2" gate="G$1" x="71.12" y="175.26"/>
+<instance part="_CAN" gate="G$1" x="15.24" y="12.7" rot="R90"/>
+<instance part="CAN" gate="G$1" x="-20.32" y="-15.24"/>
+<instance part="3.3V" gate="G$1" x="71.12" y="175.26"/>
 <instance part="C5" gate="G$1" x="88.9" y="175.26"/>
 <instance part="SUPPLY1" gate="GND" x="88.9" y="170.18"/>
 <instance part="SUPPLY2" gate="GND" x="53.34" y="172.72"/>
@@ -3160,12 +3160,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <wire x1="-25.4" y1="-7.62" x2="-30.48" y2="-7.62" width="0.1524" layer="91"/>
 <label x="-33.02" y="-7.62" size="1.778" layer="95"/>
-<pinref part="CAN_MICROMATCH" gate="G$1" pin="7"/>
+<pinref part="CAN" gate="G$1" pin="7"/>
 </segment>
 <segment>
 <wire x1="-15.24" y1="-15.24" x2="-10.16" y2="-15.24" width="0.1524" layer="91"/>
 <label x="-10.16" y="-15.24" size="1.778" layer="95"/>
-<pinref part="CAN_MICROMATCH" gate="G$1" pin="2"/>
+<pinref part="CAN" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="TRANSCEIVER" gate="G$1" pin="VSS"/>
@@ -3178,9 +3178,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="5.08" y="144.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="IN"/>
+<pinref part="3.3V" gate="G$1" pin="IN"/>
 <wire x1="60.96" y1="180.34" x2="58.42" y2="180.34" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="EN"/>
+<pinref part="3.3V" gate="G$1" pin="EN"/>
 <wire x1="58.42" y1="180.34" x2="53.34" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="170.18" x2="45.72" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="170.18" x2="45.72" y2="177.8" width="0.1524" layer="91"/>
@@ -3209,12 +3209,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <wire x1="-25.4" y1="-15.24" x2="-30.48" y2="-15.24" width="0.1524" layer="91"/>
 <label x="-33.02" y="-15.24" size="1.778" layer="95"/>
-<pinref part="CAN_MICROMATCH" gate="G$1" pin="1"/>
+<pinref part="CAN" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="-15.24" y1="-7.62" x2="-10.16" y2="-7.62" width="0.1524" layer="91"/>
 <label x="-10.16" y="-7.62" size="1.778" layer="95"/>
-<pinref part="CAN_MICROMATCH" gate="G$1" pin="8"/>
+<pinref part="CAN" gate="G$1" pin="8"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -3241,7 +3241,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="GND"/>
+<pinref part="3.3V" gate="G$1" pin="GND"/>
 <wire x1="60.96" y1="175.26" x2="53.34" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
 </segment>
@@ -3310,18 +3310,18 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <wire x1="22.86" y1="17.78" x2="22.86" y2="20.32" width="0.1524" layer="91"/>
 <label x="22.86" y="20.32" size="1.778" layer="95" rot="R90"/>
-<pinref part="JUMPER_CAN" gate="G$1" pin="3"/>
+<pinref part="_CAN" gate="G$1" pin="3"/>
 <wire x1="22.86" y1="17.78" x2="17.78" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="-25.4" y1="-10.16" x2="-30.48" y2="-10.16" width="0.1524" layer="91"/>
 <label x="-33.02" y="-10.16" size="1.778" layer="95"/>
-<pinref part="CAN_MICROMATCH" gate="G$1" pin="5"/>
+<pinref part="CAN" gate="G$1" pin="5"/>
 </segment>
 <segment>
 <wire x1="-15.24" y1="-12.7" x2="-10.16" y2="-12.7" width="0.1524" layer="91"/>
 <label x="-10.16" y="-12.7" size="1.778" layer="95"/>
-<pinref part="CAN_MICROMATCH" gate="G$1" pin="4"/>
+<pinref part="CAN" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="CANL" class="0">
@@ -3338,12 +3338,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <wire x1="-25.4" y1="-12.7" x2="-30.48" y2="-12.7" width="0.1524" layer="91"/>
 <label x="-33.02" y="-12.7" size="1.778" layer="95"/>
-<pinref part="CAN_MICROMATCH" gate="G$1" pin="3"/>
+<pinref part="CAN" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <wire x1="-15.24" y1="-10.16" x2="-10.16" y2="-10.16" width="0.1524" layer="91"/>
 <label x="-10.16" y="-10.16" size="1.778" layer="95"/>
-<pinref part="CAN_MICROMATCH" gate="G$1" pin="6"/>
+<pinref part="CAN" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="CAN_INT" class="0">
@@ -3361,8 +3361,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <net name="N$7" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="JUMPER_CAN" gate="G$1" pin="2"/>
-<pinref part="JUMPER_CAN" gate="G$1" pin="2"/>
+<pinref part="_CAN" gate="G$1" pin="2"/>
+<pinref part="_CAN" gate="G$1" pin="2"/>
 <junction x="17.78" y="15.24"/>
 <wire x1="17.78" y1="15.24" x2="22.86" y2="15.24" width="0.1524" layer="91"/>
 </segment>
@@ -3438,7 +3438,7 @@ In this library the device names are the same as the pin names of the symbols, t
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="OUT"/>
+<pinref part="3.3V" gate="G$1" pin="OUT"/>
 <wire x1="78.74" y1="180.34" x2="88.9" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 </segment>
