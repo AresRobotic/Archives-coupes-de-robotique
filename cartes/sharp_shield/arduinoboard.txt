@@ -46,6 +46,15 @@ Board 2 :
 sniffer can + nrf24l01
 librairie custom_can_bus
 finir jeudi
+port 2 CAN_INT
+10 SPI CAN
+11 SPI CAN
+12 SPI CAN
+13 SPI CAN
+VCC
+GND
+3.3V
+
 
 Board 4 :
 5 servo + can
@@ -62,10 +71,14 @@ GND
 Board 5 :
 TIVA Launchpad
 TIVA SALE et TIVA PROPRE (isolation galvanique)	
+DONE
 
 Board 6 :
 TIVA Launchpad
 MBED SALE
+DONE
+
+
 Board 7 :
 can + capteur couleur + led
 

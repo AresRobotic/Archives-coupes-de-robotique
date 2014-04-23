@@ -804,7 +804,7 @@ design rules under a new name.</description>
 <contactref element="C4" pad="2"/>
 <contactref element="C6" pad="2"/>
 <wire x1="10.16" y1="28.194" x2="10.414" y2="28.448" width="0.4" layer="1"/>
-<wire x1="10.16" y1="27.5178" x2="10.16" y2="28.194" width="0.4" layer="1"/>
+<wire x1="10.16" y1="27.5178" x2="10.16" y2="28.194" width="0" layer="19" extent="1-16"/>
 <wire x1="10.414" y1="28.448" x2="10.425" y2="28.575" width="0.4" layer="1"/>
 <wire x1="9.144" y1="29.972" x2="10.414" y2="28.702" width="0.4" layer="1"/>
 <wire x1="9.144" y1="32.258" x2="9.144" y2="29.972" width="0.4" layer="1"/>
