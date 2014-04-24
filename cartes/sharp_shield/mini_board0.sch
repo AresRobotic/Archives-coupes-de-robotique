@@ -3467,28 +3467,28 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <parts>
 <part name="U1" library="SparkFun-DigitalIC" deviceset="MCP2551" device=""/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="22pF"/>
-<part name="Q1" library="adafruit" deviceset="CRYSTAL" device="HC49S" value="16MHz"/>
+<part name="16MHZ" library="adafruit" deviceset="CRYSTAL" device="HC49S" value="16MHz"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="22pF"/>
 <part name="R1" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="4,7k"/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R2" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="120"/>
-<part name="U$2" library="MCP2515_MT" deviceset="MCP2515*" device="SO"/>
-<part name="JP5" library="pinhead" deviceset="PINHD-1X3" device="/90"/>
-<part name="JP2" library="pinhead" deviceset="PINHD-1X3" device="/90"/>
-<part name="JP3" library="pinhead" deviceset="PINHD-1X3" device="/90"/>
-<part name="JP4" library="pinhead" deviceset="PINHD-1X3" device="/90"/>
+<part name="CONTROLLER" library="MCP2515_MT" deviceset="MCP2515*" device="SO"/>
+<part name="A3" library="pinhead" deviceset="PINHD-1X3" device="/90"/>
+<part name="A0" library="pinhead" deviceset="PINHD-1X3" device="/90"/>
+<part name="A1" library="pinhead" deviceset="PINHD-1X3" device="/90"/>
+<part name="A4" library="pinhead" deviceset="PINHD-1X3" device="/90"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="CAP_POL" device="PTH2"/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="CAP_POL" device="PTH2"/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="CAP_POL" device="PTH2"/>
 <part name="C6" library="SparkFun-Capacitors" deviceset="CAP_POL" device="PTH2"/>
 <part name="FRAME1" library="frames" deviceset="A4P-LOC" device=""/>
-<part name="U$3" library="sharp_shield" deviceset="ARDUINO_PRO_MINI" device=""/>
-<part name="JP6" library="pinhead" deviceset="PINHD-1X3" device="/90"/>
-<part name="JP7" library="pinhead" deviceset="PINHD-1X3" device="/90"/>
+<part name="ARDUINO" library="sharp_shield" deviceset="ARDUINO_PRO_MINI" device=""/>
+<part name="A2" library="pinhead" deviceset="PINHD-1X3" device="/90"/>
+<part name="A5" library="pinhead" deviceset="PINHD-1X3" device="/90"/>
 <part name="C7" library="SparkFun-Capacitors" deviceset="CAP_POL" device="PTH2"/>
 <part name="C8" library="SparkFun-Capacitors" deviceset="CAP_POL" device="PTH2"/>
-<part name="SK1" library="jt-con-micromatch" deviceset="MMATCH-8-*" device="PTH"/>
-<part name="JP8" library="SparkFun-Passives" deviceset="JUMPER-3" device="PTH"/>
+<part name="CAN" library="jt-con-micromatch" deviceset="MMATCH-8-*" device="PTH"/>
+<part name="CAN_S" library="SparkFun-Passives" deviceset="JUMPER-3" device="PTH"/>
 </parts>
 <sheets>
 <sheet>
@@ -3507,28 +3507,28 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instances>
 <instance part="U1" gate="G$1" x="-2.54" y="35.56"/>
 <instance part="C1" gate="G$1" x="40.64" y="2.54" rot="R90"/>
-<instance part="Q1" gate="G$1" x="48.26" y="-2.54" rot="R90"/>
+<instance part="16MHZ" gate="G$1" x="48.26" y="-2.54" rot="R90"/>
 <instance part="C2" gate="G$1" x="43.18" y="-10.16" rot="R90"/>
 <instance part="R1" gate="G$1" x="22.86" y="48.26" rot="R90"/>
 <instance part="GND2" gate="1" x="22.86" y="58.42" rot="R180"/>
 <instance part="R2" gate="G$1" x="27.94" y="17.78" rot="R90"/>
-<instance part="U$2" gate="G$1" x="78.74" y="27.94"/>
-<instance part="JP5" gate="A" x="116.84" y="165.1"/>
-<instance part="JP2" gate="A" x="73.66" y="167.64"/>
-<instance part="JP3" gate="A" x="73.66" y="144.78"/>
-<instance part="JP4" gate="A" x="116.84" y="144.78"/>
+<instance part="CONTROLLER" gate="G$1" x="78.74" y="27.94"/>
+<instance part="A3" gate="A" x="116.84" y="165.1"/>
+<instance part="A0" gate="A" x="73.66" y="167.64"/>
+<instance part="A1" gate="A" x="73.66" y="144.78"/>
+<instance part="A4" gate="A" x="116.84" y="144.78"/>
 <instance part="C3" gate="G$1" x="45.72" y="167.64" rot="R180"/>
 <instance part="C4" gate="G$1" x="45.72" y="144.78" rot="R180"/>
 <instance part="C5" gate="G$1" x="93.98" y="162.56" rot="R180"/>
 <instance part="C6" gate="G$1" x="93.98" y="142.24" rot="R180"/>
 <instance part="FRAME1" gate="G$1" x="-53.34" y="-68.58"/>
-<instance part="U$3" gate="G$1" x="-12.7" y="149.86"/>
-<instance part="JP6" gate="A" x="73.66" y="121.92"/>
-<instance part="JP7" gate="A" x="116.84" y="121.92"/>
+<instance part="ARDUINO" gate="G$1" x="-12.7" y="149.86"/>
+<instance part="A2" gate="A" x="73.66" y="121.92"/>
+<instance part="A5" gate="A" x="116.84" y="121.92"/>
 <instance part="C7" gate="G$1" x="45.72" y="121.92" rot="R180"/>
 <instance part="C8" gate="G$1" x="93.98" y="119.38" rot="R180"/>
-<instance part="SK1" gate="G$1" x="0" y="5.08"/>
-<instance part="JP8" gate="G$1" x="22.86" y="20.32" rot="R90"/>
+<instance part="CAN" gate="G$1" x="0" y="5.08"/>
+<instance part="CAN_S" gate="G$1" x="22.86" y="20.32" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -3537,10 +3537,10 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <segment>
 <wire x1="99.06" y1="40.64" x2="106.68" y2="40.64" width="0.1524" layer="91"/>
 <label x="104.14" y="40.64" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="SI"/>
+<pinref part="CONTROLLER" gate="G$1" pin="SI"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="*11"/>
+<pinref part="ARDUINO" gate="G$1" pin="*11"/>
 <wire x1="0" y1="139.7" x2="5.08" y2="139.7" width="0.1524" layer="91"/>
 <label x="5.08" y="139.7" size="1.778" layer="95"/>
 </segment>
@@ -3549,10 +3549,10 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <segment>
 <wire x1="99.06" y1="45.72" x2="106.68" y2="45.72" width="0.1524" layer="91"/>
 <label x="104.14" y="45.72" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="SO"/>
+<pinref part="CONTROLLER" gate="G$1" pin="SO"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="12"/>
+<pinref part="ARDUINO" gate="G$1" pin="12"/>
 <wire x1="0" y1="142.24" x2="5.08" y2="142.24" width="0.1524" layer="91"/>
 <label x="5.08" y="142.24" size="1.778" layer="95"/>
 </segment>
@@ -3561,10 +3561,10 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <segment>
 <label x="104.14" y="35.56" size="1.778" layer="95"/>
 <wire x1="99.06" y1="35.56" x2="106.68" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="SCK"/>
+<pinref part="CONTROLLER" gate="G$1" pin="SCK"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="13"/>
+<pinref part="ARDUINO" gate="G$1" pin="13"/>
 <wire x1="0" y1="144.78" x2="5.08" y2="144.78" width="0.1524" layer="91"/>
 <label x="5.08" y="144.78" size="1.778" layer="95"/>
 </segment>
@@ -3573,17 +3573,17 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <segment>
 <wire x1="60.96" y1="25.4" x2="55.88" y2="25.4" width="0.1524" layer="91"/>
 <label x="53.34" y="25.4" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="VCC"/>
+<pinref part="CONTROLLER" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <wire x1="-5.08" y1="12.7" x2="-12.7" y2="12.7" width="0.1524" layer="91"/>
 <label x="-15.24" y="12.7" size="1.778" layer="95"/>
-<pinref part="SK1" gate="G$1" pin="7"/>
+<pinref part="CAN" gate="G$1" pin="7"/>
 </segment>
 <segment>
 <wire x1="5.08" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="91"/>
 <label x="7.62" y="5.08" size="1.778" layer="95"/>
-<pinref part="SK1" gate="G$1" pin="2"/>
+<pinref part="CAN" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="VSS"/>
@@ -3591,7 +3591,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <label x="-25.4" y="40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="A" pin="3"/>
+<pinref part="A3" gate="A" pin="3"/>
 <wire x1="114.3" y1="162.56" x2="99.06" y2="162.56" width="0.1524" layer="91"/>
 <label x="99.06" y="162.56" size="1.778" layer="95"/>
 <wire x1="99.06" y1="162.56" x2="99.06" y2="160.02" width="0.1524" layer="91"/>
@@ -3599,7 +3599,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="99.06" y1="160.02" x2="93.98" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="A" pin="3"/>
+<pinref part="A4" gate="A" pin="3"/>
 <wire x1="114.3" y1="142.24" x2="96.52" y2="142.24" width="0.1524" layer="91"/>
 <label x="99.06" y="142.24" size="1.778" layer="95"/>
 <wire x1="96.52" y1="142.24" x2="96.52" y2="139.7" width="0.1524" layer="91"/>
@@ -3607,24 +3607,24 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="96.52" y1="139.7" x2="93.98" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="3"/>
+<pinref part="A1" gate="A" pin="3"/>
 <label x="55.88" y="142.24" size="1.778" layer="95"/>
 <pinref part="C4" gate="G$1" pin="+"/>
 <wire x1="71.12" y1="142.24" x2="45.72" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="3"/>
+<pinref part="A0" gate="A" pin="3"/>
 <wire x1="71.12" y1="165.1" x2="45.72" y2="165.1" width="0.1524" layer="91"/>
 <label x="55.88" y="165.1" size="1.778" layer="95"/>
 <pinref part="C3" gate="G$1" pin="+"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="VCC"/>
+<pinref part="ARDUINO" gate="G$1" pin="VCC"/>
 <wire x1="0" y1="157.48" x2="5.08" y2="157.48" width="0.1524" layer="91"/>
 <label x="5.08" y="157.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP7" gate="A" pin="3"/>
+<pinref part="A5" gate="A" pin="3"/>
 <wire x1="114.3" y1="119.38" x2="96.52" y2="119.38" width="0.1524" layer="91"/>
 <label x="99.06" y="119.38" size="1.778" layer="95"/>
 <wire x1="96.52" y1="119.38" x2="96.52" y2="116.84" width="0.1524" layer="91"/>
@@ -3632,7 +3632,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="96.52" y1="116.84" x2="93.98" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP6" gate="A" pin="3"/>
+<pinref part="A2" gate="A" pin="3"/>
 <label x="55.88" y="119.38" size="1.778" layer="95"/>
 <pinref part="C7" gate="G$1" pin="+"/>
 <wire x1="71.12" y1="119.38" x2="45.72" y2="119.38" width="0.1524" layer="91"/>
@@ -3642,7 +3642,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <segment>
 <wire x1="60.96" y1="20.32" x2="55.88" y2="20.32" width="0.1524" layer="91"/>
 <label x="53.34" y="20.32" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="GND"/>
+<pinref part="CONTROLLER" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="VDD"/>
@@ -3657,12 +3657,12 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <segment>
 <wire x1="-5.08" y1="5.08" x2="-12.7" y2="5.08" width="0.1524" layer="91"/>
 <label x="-15.24" y="5.08" size="1.778" layer="95"/>
-<pinref part="SK1" gate="G$1" pin="1"/>
+<pinref part="CAN" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="5.08" y1="12.7" x2="7.62" y2="12.7" width="0.1524" layer="91"/>
 <label x="7.62" y="12.7" size="1.778" layer="95"/>
-<pinref part="SK1" gate="G$1" pin="8"/>
+<pinref part="CAN" gate="G$1" pin="8"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -3673,7 +3673,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <label x="33.02" y="-15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="A" pin="2"/>
+<pinref part="A3" gate="A" pin="2"/>
 <wire x1="114.3" y1="165.1" x2="96.52" y2="165.1" width="0.1524" layer="91"/>
 <label x="99.06" y="165.1" size="1.778" layer="95"/>
 <wire x1="96.52" y1="165.1" x2="96.52" y2="167.64" width="0.1524" layer="91"/>
@@ -3681,7 +3681,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="96.52" y1="167.64" x2="93.98" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="A" pin="2"/>
+<pinref part="A4" gate="A" pin="2"/>
 <wire x1="114.3" y1="144.78" x2="96.52" y2="144.78" width="0.1524" layer="91"/>
 <label x="99.06" y="144.78" size="1.778" layer="95"/>
 <wire x1="96.52" y1="144.78" x2="96.52" y2="147.32" width="0.1524" layer="91"/>
@@ -3689,7 +3689,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="96.52" y1="147.32" x2="93.98" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="2"/>
+<pinref part="A1" gate="A" pin="2"/>
 <wire x1="71.12" y1="144.78" x2="50.8" y2="144.78" width="0.1524" layer="91"/>
 <label x="55.88" y="144.78" size="1.778" layer="95"/>
 <wire x1="50.8" y1="144.78" x2="50.8" y2="149.86" width="0.1524" layer="91"/>
@@ -3697,7 +3697,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="50.8" y1="149.86" x2="45.72" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="2"/>
+<pinref part="A0" gate="A" pin="2"/>
 <wire x1="71.12" y1="167.64" x2="50.8" y2="167.64" width="0.1524" layer="91"/>
 <label x="55.88" y="167.64" size="1.778" layer="95"/>
 <wire x1="50.8" y1="167.64" x2="50.8" y2="170.18" width="0.1524" layer="91"/>
@@ -3707,12 +3707,12 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="48.26" y1="172.72" x2="45.72" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="GND"/>
+<pinref part="ARDUINO" gate="G$1" pin="GND"/>
 <wire x1="-22.86" y1="157.48" x2="-27.94" y2="157.48" width="0.1524" layer="91"/>
 <label x="-33.02" y="157.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP7" gate="A" pin="2"/>
+<pinref part="A5" gate="A" pin="2"/>
 <wire x1="114.3" y1="121.92" x2="96.52" y2="121.92" width="0.1524" layer="91"/>
 <label x="99.06" y="121.92" size="1.778" layer="95"/>
 <wire x1="96.52" y1="121.92" x2="96.52" y2="124.46" width="0.1524" layer="91"/>
@@ -3720,7 +3720,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="96.52" y1="124.46" x2="93.98" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP6" gate="A" pin="2"/>
+<pinref part="A2" gate="A" pin="2"/>
 <wire x1="71.12" y1="121.92" x2="50.8" y2="121.92" width="0.1524" layer="91"/>
 <label x="55.88" y="121.92" size="1.778" layer="95"/>
 <wire x1="50.8" y1="121.92" x2="50.8" y2="127" width="0.1524" layer="91"/>
@@ -3732,7 +3732,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <segment>
 <wire x1="60.96" y1="55.88" x2="55.88" y2="55.88" width="0.1524" layer="91"/>
 <label x="50.8" y="55.88" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="TXCAN"/>
+<pinref part="CONTROLLER" gate="G$1" pin="TXCAN"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="TXD"/>
@@ -3744,7 +3744,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <segment>
 <wire x1="60.96" y1="50.8" x2="55.88" y2="50.8" width="0.1524" layer="91"/>
 <label x="50.8" y="50.8" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="RXCAN"/>
+<pinref part="CONTROLLER" gate="G$1" pin="RXCAN"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="RXD"/>
@@ -3756,10 +3756,10 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <segment>
 <wire x1="99.06" y1="55.88" x2="104.14" y2="55.88" width="0.1524" layer="91"/>
 <label x="104.14" y="55.88" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="RESET/"/>
+<pinref part="CONTROLLER" gate="G$1" pin="RESET/"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="RST"/>
+<pinref part="ARDUINO" gate="G$1" pin="RST"/>
 <wire x1="-22.86" y1="160.02" x2="-27.94" y2="160.02" width="0.1524" layer="91"/>
 <label x="-33.02" y="160.02" size="1.778" layer="95"/>
 </segment>
@@ -3768,10 +3768,10 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <segment>
 <wire x1="99.06" y1="50.8" x2="106.68" y2="50.8" width="0.1524" layer="91"/>
 <label x="104.14" y="50.8" size="1.778" layer="95"/>
-<pinref part="U$2" gate="G$1" pin="CS/"/>
+<pinref part="CONTROLLER" gate="G$1" pin="CS/"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="*10"/>
+<pinref part="ARDUINO" gate="G$1" pin="*10"/>
 <wire x1="0" y1="137.16" x2="5.08" y2="137.16" width="0.1524" layer="91"/>
 <label x="5.08" y="137.16" size="1.778" layer="95"/>
 </segment>
@@ -3792,18 +3792,18 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <segment>
 <wire x1="25.4" y1="25.4" x2="25.4" y2="27.94" width="0.1524" layer="91"/>
 <label x="25.4" y="27.94" size="1.778" layer="95" rot="R90"/>
-<pinref part="JP8" gate="G$1" pin="3"/>
+<pinref part="CAN_S" gate="G$1" pin="3"/>
 <junction x="25.4" y="25.4"/>
 </segment>
 <segment>
 <wire x1="-5.08" y1="10.16" x2="-12.7" y2="10.16" width="0.1524" layer="91"/>
 <label x="-15.24" y="10.16" size="1.778" layer="95"/>
-<pinref part="SK1" gate="G$1" pin="5"/>
+<pinref part="CAN" gate="G$1" pin="5"/>
 </segment>
 <segment>
 <wire x1="5.08" y1="7.62" x2="7.62" y2="7.62" width="0.1524" layer="91"/>
 <label x="7.62" y="7.62" size="1.778" layer="95"/>
-<pinref part="SK1" gate="G$1" pin="4"/>
+<pinref part="CAN" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="CANL" class="0">
@@ -3820,22 +3820,22 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <segment>
 <wire x1="-5.08" y1="7.62" x2="-12.7" y2="7.62" width="0.1524" layer="91"/>
 <label x="-15.24" y="7.62" size="1.778" layer="95"/>
-<pinref part="SK1" gate="G$1" pin="3"/>
+<pinref part="CAN" gate="G$1" pin="3"/>
 </segment>
 <segment>
 <wire x1="5.08" y1="10.16" x2="7.62" y2="10.16" width="0.1524" layer="91"/>
 <label x="7.62" y="10.16" size="1.778" layer="95"/>
-<pinref part="SK1" gate="G$1" pin="6"/>
+<pinref part="CAN" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="CAN_INT" class="0">
 <segment>
 <label x="104.14" y="30.48" size="1.778" layer="95"/>
 <wire x1="99.06" y1="30.48" x2="106.68" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="INT/"/>
+<pinref part="CONTROLLER" gate="G$1" pin="INT/"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="2"/>
+<pinref part="ARDUINO" gate="G$1" pin="2"/>
 <wire x1="-22.86" y1="154.94" x2="-27.94" y2="154.94" width="0.1524" layer="91"/>
 <label x="-33.02" y="154.94" size="1.778" layer="95"/>
 </segment>
@@ -3843,8 +3843,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <net name="N$7" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="JP8" gate="G$1" pin="2"/>
-<pinref part="JP8" gate="G$1" pin="2"/>
+<pinref part="CAN_S" gate="G$1" pin="2"/>
+<pinref part="CAN_S" gate="G$1" pin="2"/>
 <wire x1="27.94" y1="22.86" x2="25.4" y2="22.86" width="0.1524" layer="91"/>
 <junction x="25.4" y="22.86"/>
 </segment>
@@ -3853,92 +3853,92 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="43.18" y1="2.54" x2="48.26" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="2"/>
+<pinref part="16MHZ" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="2.54" x2="48.26" y2="0" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="0" x2="60.96" y2="0" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="OSC2"/>
+<pinref part="CONTROLLER" gate="G$1" pin="OSC2"/>
 <junction x="48.26" y="0"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="Q1" gate="G$1" pin="1"/>
+<pinref part="16MHZ" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="-5.08" x2="48.26" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="-5.08" x2="48.26" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="-10.16" x2="45.72" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="OSC1"/>
+<pinref part="CONTROLLER" gate="G$1" pin="OSC1"/>
 <junction x="48.26" y="-5.08"/>
 </segment>
 </net>
 <net name="A4" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="A4"/>
+<pinref part="ARDUINO" gate="G$1" pin="A4"/>
 <wire x1="-22.86" y1="132.08" x2="-27.94" y2="132.08" width="0.1524" layer="91"/>
 <label x="-30.48" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP4" gate="A" pin="1"/>
+<pinref part="A4" gate="A" pin="1"/>
 <wire x1="114.3" y1="147.32" x2="99.06" y2="147.32" width="0.1524" layer="91"/>
 <label x="99.06" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A5" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="A5"/>
+<pinref part="ARDUINO" gate="G$1" pin="A5"/>
 <wire x1="-22.86" y1="129.54" x2="-27.94" y2="129.54" width="0.1524" layer="91"/>
 <label x="-30.48" y="129.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP7" gate="A" pin="1"/>
+<pinref part="A5" gate="A" pin="1"/>
 <wire x1="114.3" y1="124.46" x2="99.06" y2="124.46" width="0.1524" layer="91"/>
 <label x="99.06" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A0" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="A0"/>
+<pinref part="ARDUINO" gate="G$1" pin="A0"/>
 <wire x1="0" y1="147.32" x2="5.08" y2="147.32" width="0.1524" layer="91"/>
 <label x="5.08" y="147.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="1"/>
+<pinref part="A0" gate="A" pin="1"/>
 <wire x1="71.12" y1="170.18" x2="55.88" y2="170.18" width="0.1524" layer="91"/>
 <label x="55.88" y="170.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A1" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="A1"/>
+<pinref part="ARDUINO" gate="G$1" pin="A1"/>
 <wire x1="0" y1="149.86" x2="5.08" y2="149.86" width="0.1524" layer="91"/>
 <label x="5.08" y="149.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="1"/>
+<pinref part="A1" gate="A" pin="1"/>
 <wire x1="71.12" y1="147.32" x2="55.88" y2="147.32" width="0.1524" layer="91"/>
 <label x="55.88" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A2" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="A2"/>
+<pinref part="ARDUINO" gate="G$1" pin="A2"/>
 <wire x1="0" y1="152.4" x2="5.08" y2="152.4" width="0.1524" layer="91"/>
 <label x="5.08" y="152.4" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP6" gate="A" pin="1"/>
+<pinref part="A2" gate="A" pin="1"/>
 <wire x1="71.12" y1="124.46" x2="55.88" y2="124.46" width="0.1524" layer="91"/>
 <label x="55.88" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A3" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="A3"/>
+<pinref part="ARDUINO" gate="G$1" pin="A3"/>
 <wire x1="0" y1="154.94" x2="5.08" y2="154.94" width="0.1524" layer="91"/>
 <label x="5.08" y="154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP5" gate="A" pin="1"/>
+<pinref part="A3" gate="A" pin="1"/>
 <wire x1="114.3" y1="167.64" x2="99.06" y2="167.64" width="0.1524" layer="91"/>
 <label x="99.06" y="167.64" size="1.778" layer="95"/>
 </segment>
