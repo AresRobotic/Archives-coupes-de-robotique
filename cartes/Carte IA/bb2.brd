@@ -123,10 +123,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="139.37" y2="0" width="0" layer="20"/>
-<wire x1="139.37" y1="0" x2="139.37" y2="118.1" width="0" layer="20"/>
-<wire x1="139.37" y1="118.1" x2="0" y2="118.1" width="0" layer="20"/>
-<wire x1="0" y1="118.1" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="25.4" y1="15.875" x2="85.395" y2="15.875" width="0" layer="20"/>
+<wire x1="85.395" y1="15.875" x2="85.395" y2="88.255" width="0" layer="20"/>
+<wire x1="85.395" y1="88.255" x2="25.4" y2="88.255" width="0" layer="20"/>
+<wire x1="25.4" y1="88.255" x2="25.4" y2="15.875" width="0" layer="20"/>
 <text x="57.15" y="76.2" size="6.4516" layer="37" font="vector" ratio="11">IA</text>
 <text x="48.26" y="58.42" size="2.54" layer="37" font="vector" ratio="11">ARES ENSEA</text>
 <text x="62.23" y="55.88" size="1.778" layer="37" font="vector" ratio="11">DIPOLE</text>

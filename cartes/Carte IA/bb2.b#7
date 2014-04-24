@@ -127,16 +127,9 @@
 <wire x1="139.37" y1="0" x2="139.37" y2="118.1" width="0" layer="20"/>
 <wire x1="139.37" y1="118.1" x2="0" y2="118.1" width="0" layer="20"/>
 <wire x1="0" y1="118.1" x2="0" y2="0" width="0" layer="20"/>
-<text x="65.405" y="52.07" size="6.4516" layer="1" font="vector" ratio="11">IA</text>
-<text x="65.405" y="52.07" size="6.4516" layer="1" font="vector" ratio="11">IA</text>
-<text x="65.405" y="52.07" size="6.4516" layer="1" font="vector" ratio="11">IA</text>
-<text x="65.405" y="52.07" size="6.4516" layer="1" font="vector" ratio="11">IA</text>
-<text x="65.405" y="52.07" size="6.4516" layer="1" font="vector" ratio="11">IA</text>
-<text x="65.405" y="51.435" size="6.4516" layer="1" font="vector" ratio="11">IA</text>
-<text x="65.405" y="52.07" size="6.4516" layer="1" font="vector" ratio="11">IA</text>
-<text x="66.04" y="52.07" size="6.4516" layer="1" font="vector" ratio="11">IA</text>
-<text x="66.04" y="52.07" size="6.4516" layer="1" font="vector" ratio="11">IA</text>
-<text x="64.135" y="52.07" size="6.4516" layer="1" font="vector" ratio="11">IA</text>
+<text x="88.9" y="48.26" size="6.4516" layer="1" font="vector" ratio="11">IA</text>
+<text x="48.26" y="58.42" size="2.54" layer="1" font="vector" ratio="11">ARES ENSEA</text>
+<text x="62.23" y="55.88" size="1.778" layer="1" font="vector" ratio="11">DIPOLE</text>
 </plain>
 <libraries>
 <library name="adafruit">
@@ -2507,11 +2500,10 @@ design rules under a new name.</description>
 <wire x1="70.64" y1="24.765" x2="70.64" y2="24.61" width="0.6096" layer="16"/>
 <wire x1="70.64" y1="24.61" x2="72.39" y2="22.86" width="0.6096" layer="16"/>
 <polygon width="0.6096" layer="1" isolate="0.6096">
-<vertex x="21.59" y="95.25"/>
-<vertex x="21.59" y="15.875"/>
-<vertex x="90.805" y="15.875"/>
-<vertex x="90.805" y="95.885"/>
 <vertex x="21.59" y="95.885"/>
+<vertex x="21.59" y="15.875"/>
+<vertex x="104.775" y="15.875"/>
+<vertex x="104.775" y="95.885"/>
 </polygon>
 <polygon width="0.6096" layer="16" isolate="0.6096">
 <vertex x="17.78" y="93.345"/>
