@@ -127,6 +127,7 @@
 <wire x1="44.755" y1="13.97" x2="45.0725" y2="51.298" width="0" layer="20"/>
 <wire x1="45.0725" y1="51.298" x2="1.5875" y2="50.7265" width="0" layer="20"/>
 <wire x1="1.5875" y1="50.7265" x2="1.651" y2="13.9065" width="0" layer="20"/>
+<text x="3.7465" y="16.5735" size="1.27" layer="25" rot="R90">Carte Sharp-CAN</text>
 </plain>
 <libraries>
 <library name="SparkFun-DigitalIC">
@@ -869,8 +870,9 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <signal name="RST">
 <contactref element="CONTROLLER" pad="17"/>
 <contactref element="ARDUINO" pad="3"/>
-<wire x1="33.2486" y1="27.3812" x2="30.9372" y2="27.3812" width="0.2" layer="1"/>
-<wire x1="33.2486" y1="38.4048" x2="33.2486" y2="27.3812" width="0.2" layer="1"/>
+<wire x1="33.2486" y1="38.4048" x2="33.2486" y2="27.750371875" width="0.2" layer="1"/>
+<wire x1="33.2486" y1="27.750371875" x2="32.879428125" y2="27.3812" width="0.2" layer="1" curve="-90"/>
+<wire x1="32.879428125" y1="27.3812" x2="30.9372" y2="27.3812" width="0.2" layer="1"/>
 <wire x1="30.5816" y1="41.0718" x2="33.2486" y2="38.4048" width="0.2" layer="1"/>
 <wire x1="30.5816" y1="41.783" x2="30.5816" y2="41.0718" width="0.2" layer="1"/>
 <wire x1="30.9372" y1="27.3812" x2="30.9372" y2="27.305" width="0.2" layer="1"/>
@@ -940,9 +942,9 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <contactref element="R2" pad="1"/>
 <contactref element="CAN" pad="3"/>
 <contactref element="CAN" pad="6"/>
-<wire x1="10.4902" y1="21.8694" x2="12.6238" y2="21.8694" width="0.2" layer="1"/>
+<wire x1="10.4902" y1="21.8694" x2="11.834596875" y2="21.8694" width="0.2" layer="1"/>
+<wire x1="11.834596875" y1="21.8694" x2="12.6365" y2="22.6585" width="0.2" layer="1" curve="89.077931"/>
 <wire x1="9.6012" y1="20.9804" x2="10.4902" y2="21.8694" width="0.2" layer="1"/>
-<wire x1="12.6238" y1="21.8694" x2="12.6365" y2="22.6585" width="0.2" layer="1"/>
 <wire x1="9.6012" y1="20.9804" x2="9.525" y2="20.955" width="0.2" layer="1"/>
 <wire x1="19.2024" y1="44.45" x2="20.3962" y2="44.45" width="0.2" layer="1"/>
 <wire x1="19.2024" y1="44.2722" x2="19.2024" y2="44.45" width="0.2" layer="1"/>
