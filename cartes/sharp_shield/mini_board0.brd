@@ -123,11 +123,11 @@
 </layers>
 <board>
 <plain>
-<wire x1="0.762" y1="14.0335" x2="45.39" y2="13.97" width="0" layer="20"/>
-<wire x1="45.39" y1="13.97" x2="45.644" y2="51.171" width="0" layer="20"/>
+<wire x1="0.762" y1="13.9065" x2="45.39" y2="13.843" width="0" layer="20"/>
+<wire x1="45.39" y1="13.843" x2="45.644" y2="51.171" width="0" layer="20"/>
 <wire x1="45.644" y1="51.171" x2="0.8255" y2="51.298" width="0" layer="20"/>
-<wire x1="0.8255" y1="51.298" x2="0.762" y2="14.0335" width="0" layer="20"/>
-<text x="3.7465" y="16.5735" size="1.27" layer="25" rot="R90">Carte Sharp-CAN</text>
+<wire x1="0.8255" y1="51.298" x2="0.762" y2="13.9065" width="0" layer="20"/>
+<text x="3.2385" y="18.415" size="1.27" layer="25" rot="R90">Carte Sharp-CAN</text>
 <text x="12.1285" y="14.859" size="1.4224" layer="25">Ares Dipole 2014</text>
 </plain>
 <libraries>
