@@ -14504,7 +14504,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/409317160AD421_c.pdf</de
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0805" value="100nF"/>
 <part name="C7" library="rcl" deviceset="C-EU" device="C0805" value="100nF"/>
-<part name="U$4" library="jt-con-micromatch" deviceset="MMATCH-6-*" device=""/>
+<part name="INPUT" library="jt-con-micromatch" deviceset="MMATCH-6-*" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 </parts>
@@ -14565,7 +14565,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/409317160AD421_c.pdf</de
 <instance part="P+8" gate="1" x="-79.375" y="-52.705" rot="R180"/>
 <instance part="C5" gate="G$1" x="-71.755" y="-27.305" rot="R90"/>
 <instance part="C7" gate="G$1" x="-132.715" y="-29.845" rot="R90"/>
-<instance part="U$4" gate="G$1" x="-149.86" y="-74.93"/>
+<instance part="INPUT" gate="G$1" x="-149.86" y="-74.93"/>
 <instance part="P+3" gate="VCC" x="-161.29" y="-85.09" rot="R180"/>
 <instance part="GND2" gate="1" x="-139.7" y="-85.09"/>
 </instances>
@@ -14851,7 +14851,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/409317160AD421_c.pdf</de
 <label x="-104.14" y="12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="8"/>
+<pinref part="INPUT" gate="G$1" pin="8"/>
 <wire x1="-144.78" y1="-72.39" x2="-139.7" y2="-72.39" width="0.1524" layer="91"/>
 <label x="-139.7" y="-72.39" size="1.778" layer="95"/>
 </segment>
@@ -14868,7 +14868,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/409317160AD421_c.pdf</de
 <label x="-104.14" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="7"/>
+<pinref part="INPUT" gate="G$1" pin="7"/>
 <wire x1="-154.94" y1="-72.39" x2="-160.02" y2="-72.39" width="0.1524" layer="91"/>
 <label x="-160.02" y="-72.39" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -14885,7 +14885,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/409317160AD421_c.pdf</de
 <label x="-104.14" y="17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="6"/>
+<pinref part="INPUT" gate="G$1" pin="6"/>
 <wire x1="-144.78" y1="-74.93" x2="-139.7" y2="-74.93" width="0.1524" layer="91"/>
 <label x="-139.7" y="-74.93" size="1.778" layer="95"/>
 </segment>
@@ -14902,7 +14902,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/409317160AD421_c.pdf</de
 <label x="-104.14" y="20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="5"/>
+<pinref part="INPUT" gate="G$1" pin="5"/>
 <wire x1="-154.94" y1="-74.93" x2="-160.02" y2="-74.93" width="0.1524" layer="91"/>
 <label x="-160.02" y="-74.93" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -14930,7 +14930,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/409317160AD421_c.pdf</de
 <junction x="-125.095" y="-29.845"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="3"/>
+<pinref part="INPUT" gate="G$1" pin="3"/>
 <wire x1="-154.94" y1="-77.47" x2="-161.29" y2="-77.47" width="0.1524" layer="91"/>
 <wire x1="-161.29" y1="-77.47" x2="-161.29" y2="-82.55" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
@@ -14959,7 +14959,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/409317160AD421_c.pdf</de
 <junction x="-137.795" y="-29.845"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="4"/>
+<pinref part="INPUT" gate="G$1" pin="4"/>
 <wire x1="-144.78" y1="-77.47" x2="-139.7" y2="-77.47" width="0.1524" layer="91"/>
 <wire x1="-139.7" y1="-77.47" x2="-139.7" y2="-82.55" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>

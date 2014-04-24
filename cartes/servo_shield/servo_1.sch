@@ -4489,6 +4489,35 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <text x="-1.055" y="-4" size="1.27" layer="27">&gt;VALUE</text>
 <hole x="-1.62" y="0.905" drill="1.5"/>
 </package>
+<package name="AMP-215079-6">
+<wire x1="-1.555" y1="3.77" x2="7.905" y2="3.77" width="0.127" layer="21"/>
+<wire x1="7.905" y1="3.77" x2="7.905" y2="2.77" width="0.127" layer="21"/>
+<wire x1="7.905" y1="-0.23" x2="7.905" y2="-1.23" width="0.127" layer="21"/>
+<wire x1="7.905" y1="-1.23" x2="-1.555" y2="-1.23" width="0.127" layer="21"/>
+<wire x1="-1.555" y1="-1.23" x2="-1.555" y2="-0.23" width="0.127" layer="21"/>
+<wire x1="-1.555" y1="2.77" x2="-1.555" y2="3.77" width="0.127" layer="21"/>
+<wire x1="-1.555" y1="2.77" x2="-1.055" y2="2.77" width="0.127" layer="21"/>
+<wire x1="-1.055" y1="2.77" x2="-1.055" y2="-0.23" width="0.127" layer="21"/>
+<wire x1="-1.055" y1="-0.23" x2="-1.555" y2="-0.23" width="0.127" layer="21"/>
+<wire x1="7.905" y1="2.77" x2="7.405" y2="2.77" width="0.127" layer="21"/>
+<wire x1="7.405" y1="2.77" x2="7.405" y2="-0.23" width="0.127" layer="21"/>
+<wire x1="7.405" y1="-0.23" x2="7.905" y2="-0.23" width="0.127" layer="21"/>
+<wire x1="-1.055" y1="2.77" x2="-1.055" y2="3.27" width="0.127" layer="51"/>
+<wire x1="-1.055" y1="3.27" x2="7.405" y2="3.27" width="0.127" layer="51"/>
+<wire x1="7.405" y1="3.27" x2="7.405" y2="2.77" width="0.127" layer="51"/>
+<wire x1="-1.055" y1="-0.23" x2="-1.055" y2="-0.73" width="0.127" layer="51"/>
+<wire x1="-1.055" y1="-0.73" x2="7.405" y2="-0.73" width="0.127" layer="51"/>
+<wire x1="7.405" y1="-0.73" x2="7.405" y2="-0.23" width="0.127" layer="51"/>
+<pad name="1" x="0" y="0" drill="0.8" diameter="1.4224"/>
+<pad name="2" x="1.27" y="2.54" drill="0.8" diameter="1.4224"/>
+<pad name="3" x="2.54" y="0" drill="0.8" diameter="1.4224"/>
+<pad name="4" x="3.81" y="2.54" drill="0.8" diameter="1.4224"/>
+<pad name="5" x="5.08" y="0" drill="0.8" diameter="1.4224"/>
+<pad name="6" x="6.35" y="2.54" drill="0.8" diameter="1.4224"/>
+<text x="-1.055" y="4.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.055" y="-2.73" size="1.27" layer="27">&gt;VALUE</text>
+<hole x="-1.62" y="2.175" drill="1.5"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CON-8">
@@ -4523,6 +4552,32 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <pin name="4" x="5.08" y="2.54" visible="pad" length="short" rot="R180"/>
 <pin name="2" x="5.08" y="0" visible="pad" length="short" rot="R180"/>
 </symbol>
+<symbol name="CON-6">
+<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-1.016" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-1.016" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.016" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.016" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="1.016" y2="2.54" width="0.254" layer="94"/>
+<text x="-2.54" y="5.588" size="1.27" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-6.858" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="3" x="-5.08" y="-2.54" visible="pad" length="short"/>
+<pin name="5" x="-5.08" y="0" visible="pad" length="short"/>
+<pin name="7" x="-5.08" y="2.54" visible="pad" length="short"/>
+<pin name="8" x="5.08" y="2.54" visible="pad" length="short" rot="R180"/>
+<pin name="6" x="5.08" y="0" visible="pad" length="short" rot="R180"/>
+<pin name="4" x="5.08" y="-2.54" visible="pad" length="short" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MMATCH-8-*" prefix="SK" uservalue="yes">
@@ -4556,6 +4611,26 @@ Basic 0.1" spaced jumper. Use with breakaway headers.</description>
 <connect gate="G$1" pin="6" pad="6"/>
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MMATCH-6-*">
+<gates>
+<gate name="G$1" symbol="CON-6" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="AMP-215079-6">
+<connects>
+<connect gate="G$1" pin="3" pad="1"/>
+<connect gate="G$1" pin="4" pad="2"/>
+<connect gate="G$1" pin="5" pad="3"/>
+<connect gate="G$1" pin="6" pad="4"/>
+<connect gate="G$1" pin="7" pad="5"/>
+<connect gate="G$1" pin="8" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5574,6 +5649,58 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </deviceset>
 </devicesets>
 </library>
+<library name="supply1">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+ GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+ Please keep in mind, that these devices are necessary for the
+ automatic wiring of the supply signals.&lt;p&gt;
+ The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+ In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+ &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="VCC">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="GND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="VCC" prefix="P+">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="VCC" symbol="VCC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5724,6 +5851,9 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
+<part name="INPUT" library="jt-con-micromatch" deviceset="MMATCH-6-*" device=""/>
+<part name="P+3" library="supply1" deviceset="VCC" device=""/>
+<part name="GND1" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5887,6 +6017,9 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="MF" x="-15.24" y="-5.08" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MPN" x="-15.24" y="-5.08" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
+<instance part="INPUT" gate="G$1" x="-48.26" y="26.67"/>
+<instance part="P+3" gate="VCC" x="-59.69" y="16.51" rot="R180"/>
+<instance part="GND1" gate="1" x="-38.1" y="16.51"/>
 </instances>
 <busses>
 </busses>
@@ -5973,6 +6106,12 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="-15.24" y1="17.78" x2="-22.86" y2="17.78" width="0.1524" layer="91"/>
 <label x="-25.4" y="17.78" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="INPUT" gate="G$1" pin="3"/>
+<wire x1="-53.34" y1="24.13" x2="-59.69" y2="24.13" width="0.1524" layer="91"/>
+<wire x1="-59.69" y1="24.13" x2="-59.69" y2="19.05" width="0.1524" layer="91"/>
+<pinref part="P+3" gate="VCC" pin="VCC"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -6044,6 +6183,12 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="CARTE_PUISSANCE" gate="G$1" pin="2"/>
 <wire x1="-5.08" y1="17.78" x2="2.54" y2="17.78" width="0.1524" layer="91"/>
 <label x="2.54" y="17.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="INPUT" gate="G$1" pin="4"/>
+<wire x1="-43.18" y1="24.13" x2="-38.1" y2="24.13" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="24.13" x2="-38.1" y2="19.05" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="CAN_TXD" class="0">
@@ -6253,7 +6398,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="PWM7" class="0">
 <segment>
-<wire x1="-22.86" y1="58.42" x2="-40.64" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="58.42" x2="-35.56" y2="58.42" width="0.1524" layer="91"/>
 <label x="-35.56" y="58.42" size="1.778" layer="95"/>
 <pinref part="U$3" gate="G$1" pin="7"/>
 </segment>
@@ -6668,6 +6813,34 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="LED3" gate="G$1" pin="A"/>
 <pinref part="R4" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="C_PWM2" class="0">
+<segment>
+<pinref part="INPUT" gate="G$1" pin="8"/>
+<wire x1="-43.18" y1="29.21" x2="-38.1" y2="29.21" width="0.1524" layer="91"/>
+<label x="-38.1" y="29.21" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="C_DIR2" class="0">
+<segment>
+<pinref part="INPUT" gate="G$1" pin="7"/>
+<wire x1="-53.34" y1="29.21" x2="-58.42" y2="29.21" width="0.1524" layer="91"/>
+<label x="-58.42" y="29.21" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="C_PWM1" class="0">
+<segment>
+<pinref part="INPUT" gate="G$1" pin="6"/>
+<wire x1="-43.18" y1="26.67" x2="-38.1" y2="26.67" width="0.1524" layer="91"/>
+<label x="-38.1" y="26.67" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="C_DIR1" class="0">
+<segment>
+<pinref part="INPUT" gate="G$1" pin="5"/>
+<wire x1="-53.34" y1="26.67" x2="-58.42" y2="26.67" width="0.1524" layer="91"/>
+<label x="-58.42" y="26.67" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>
