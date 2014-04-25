@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.635" altunitdist="mm" altunit="mm"/>
+<grid distance="0.254" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.635" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -107,6 +107,9 @@
 <wire x1="30" y1="30" x2="0" y2="30" width="0" layer="20"/>
 <wire x1="0" y1="30" x2="0" y2="0" width="0" layer="20"/>
 <text x="11.7" y="26.7" size="1.778" layer="25">Tirette</text>
+<text x="20.574" y="23.114" size="1.27" layer="25"> ARES
+&amp; AREC
+2014</text>
 </plain>
 <libraries>
 <library name="jt-con-micromatch">
@@ -1504,14 +1507,14 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U$3" library="jt-con-micromatch" package="AMP-215079-4" value="MMATCH-4-" x="17" y="5.92" rot="R180"/>
+<element name="CARTE_IA" library="jt-con-micromatch" package="AMP-215079-4" value="MMATCH-4-" x="12.9" y="6.52" rot="MR180"/>
 <element name="X1" library="con-molex" package="22-23-2021" value="22-23-2021" x="15.21" y="22.55">
 <attribute name="OC_NEWARK" value="25C3832" x="43.15" y="16.2" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="22-23-2021" x="43.15" y="16.2" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="MOLEX" x="43.15" y="16.2" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1462926" x="43.15" y="16.2" size="1.778" layer="27" display="off"/>
 </element>
-<element name="S1" library="switch" package="320-916" value="" x="15.14" y="14.82" rot="R90"/>
+<element name="COULEUR" library="switch" package="320-916" value="" x="15.14" y="14.82" rot="R90"/>
 <element name="R1" library="rcl" package="R0805" value="" x="21.36" y="4.69" rot="R270"/>
 <element name="R2" library="rcl" package="M0805" value="1k" x="26.32" y="20.04" rot="R270"/>
 <element name="ROUGE" library="led" package="SML0805" value="" x="26.35" y="14.58" rot="R90"/>
@@ -1520,14 +1523,10 @@ design rules under a new name.</description>
 </elements>
 <signals>
 <signal name="GND">
-<contactref element="U$3" pad="1"/>
-<contactref element="S1" pad="1"/>
+<contactref element="CARTE_IA" pad="1"/>
+<contactref element="COULEUR" pad="1"/>
 <contactref element="ROUGE" pad="C"/>
 <contactref element="R1" pad="1"/>
-<wire x1="11.1268" y1="14.82" x2="11.1268" y2="11.7932" width="0.6096" layer="16"/>
-<wire x1="11.1268" y1="11.7932" x2="17" y2="5.92" width="0.6096" layer="16"/>
-<wire x1="17" y1="5.92" x2="21.08" y2="5.92" width="0.6096" layer="1"/>
-<wire x1="21.08" y1="5.92" x2="21.36" y2="5.64" width="0.6096" layer="1"/>
 <wire x1="21.36" y1="5.64" x2="26.35" y2="10.63" width="0.6096" layer="1"/>
 <wire x1="26.35" y1="10.63" x2="26.35" y2="13.53" width="0.6096" layer="1"/>
 <polygon width="0.6096" layer="1" isolate="0.4">
@@ -1544,9 +1543,9 @@ design rules under a new name.</description>
 </polygon>
 </signal>
 <signal name="+3V3">
-<contactref element="U$3" pad="3"/>
+<contactref element="CARTE_IA" pad="3"/>
 <contactref element="X1" pad="2"/>
-<contactref element="S1" pad="3"/>
+<contactref element="COULEUR" pad="3"/>
 <wire x1="16.48" y1="22.55" x2="16.48" y2="24.62" width="0.6096" layer="1"/>
 <wire x1="16.48" y1="24.62" x2="15.4" y2="25.7" width="0.6096" layer="1"/>
 <wire x1="3.8" y1="24.2" x2="5.3" y2="25.7" width="0.6096" layer="1"/>
@@ -1556,40 +1555,50 @@ design rules under a new name.</description>
 <wire x1="16.48" y1="22.55" x2="19.1532" y2="19.8768" width="0.6096" layer="16"/>
 <wire x1="19.1532" y1="19.8768" x2="19.1532" y2="14.82" width="0.6096" layer="16"/>
 <wire x1="19.1532" y1="14.82" x2="19.1532" y2="11.6532" width="0.6096" layer="16"/>
-<wire x1="19.1532" y1="11.6532" x2="14.46" y2="6.96" width="0.6096" layer="16"/>
-<wire x1="14.46" y1="6.96" x2="14.46" y2="5.92" width="0.6096" layer="16"/>
+<wire x1="15.24" y1="6.35" x2="15.44" y2="6.52" width="0.254" layer="1"/>
+<wire x1="19.05" y1="13.97" x2="19.1532" y2="14.82" width="0.254" layer="1"/>
+<wire x1="15.24" y1="6.35" x2="18.55" y2="6.35" width="0.4064" layer="1"/>
+<wire x1="18.55" y1="6.35" x2="18.6" y2="6.3" width="0.4064" layer="1"/>
+<wire x1="18.6" y1="6.3" x2="18.6" y2="6.4" width="0.4064" layer="1"/>
+<wire x1="18.6" y1="6.4" x2="19.6" y2="7.4" width="0.4064" layer="1"/>
+<wire x1="19.6" y1="7.4" x2="19.6" y2="14.3732" width="0.4064" layer="1"/>
+<wire x1="19.6" y1="14.3732" x2="19.1532" y2="14.82" width="0.4064" layer="1"/>
 </signal>
 <signal name="TIRETTE">
-<contactref element="U$3" pad="2"/>
+<contactref element="CARTE_IA" pad="2"/>
 <contactref element="X1" pad="1"/>
 <contactref element="R1" pad="2"/>
-<wire x1="13.94" y1="22.55" x2="9.05" y2="22.55" width="0.6096" layer="16"/>
-<wire x1="9.05" y1="22.55" x2="6.8" y2="20.3" width="0.6096" layer="16"/>
-<wire x1="6.8" y1="20.3" x2="6.8" y2="6.5" width="0.6096" layer="16"/>
-<wire x1="6.8" y1="6.5" x2="11.7" y2="1.6" width="0.6096" layer="16"/>
-<wire x1="11.7" y1="1.6" x2="13.95" y2="1.6" width="0.6096" layer="16"/>
-<wire x1="13.95" y1="1.6" x2="15.73" y2="3.38" width="0.6096" layer="16"/>
-<wire x1="15.73" y1="3.38" x2="16.81" y2="2.3" width="0.6096" layer="1"/>
-<wire x1="16.81" y1="2.3" x2="19.9" y2="2.3" width="0.6096" layer="1"/>
-<wire x1="19.9" y1="2.3" x2="21.34" y2="3.74" width="0.6096" layer="1"/>
-<wire x1="21.34" y1="3.74" x2="21.36" y2="3.74" width="0.6096" layer="1"/>
+<wire x1="13.94" y1="22.55" x2="10.358" y2="22.55" width="0.4064" layer="1"/>
+<wire x1="10.358" y1="22.55" x2="7.874" y2="20.066" width="0.4064" layer="1"/>
+<wire x1="7.874" y1="20.066" x2="7.874" y2="5.08" width="0.4064" layer="1"/>
+<wire x1="7.874" y1="5.08" x2="11.176" y2="1.778" width="0.4064" layer="1"/>
+<wire x1="11.176" y1="1.778" x2="11.968" y2="1.778" width="0.4064" layer="1"/>
+<wire x1="11.968" y1="1.778" x2="14.17" y2="3.98" width="0.4064" layer="1"/>
+<wire x1="14.17" y1="3.98" x2="14.17" y2="3.61" width="0.4064" layer="1"/>
+<wire x1="14.17" y1="3.61" x2="16.002" y2="1.778" width="0.4064" layer="1"/>
+<wire x1="16.002" y1="1.778" x2="19.398" y2="1.778" width="0.4064" layer="1"/>
+<wire x1="19.398" y1="1.778" x2="21.36" y2="3.74" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$1">
-<contactref element="U$3" pad="4"/>
-<contactref element="S1" pad="2"/>
+<contactref element="CARTE_IA" pad="4"/>
+<contactref element="COULEUR" pad="2"/>
 <contactref element="R2" pad="1"/>
-<wire x1="15.14" y1="14.82" x2="15.14" y2="9.24" width="0.6096" layer="1"/>
-<wire x1="15.14" y1="9.24" x2="12.8" y2="6.9" width="0.6096" layer="1"/>
-<wire x1="12.8" y1="6.9" x2="12.8" y2="3.77" width="0.6096" layer="1"/>
-<wire x1="12.8" y1="3.77" x2="13.19" y2="3.38" width="0.6096" layer="1"/>
 <contactref element="JAUNE" pad="C"/>
-<wire x1="3.8" y1="13.55" x2="3.8" y2="7.9" width="0.6096" layer="1"/>
-<wire x1="3.8" y1="7.9" x2="8.4" y2="3.3" width="0.6096" layer="1"/>
-<wire x1="8.4" y1="3.3" x2="13.11" y2="3.3" width="0.6096" layer="1"/>
-<wire x1="13.11" y1="3.3" x2="13.19" y2="3.38" width="0.6096" layer="1"/>
 <wire x1="15.14" y1="14.82" x2="15.14" y2="16.74" width="0.6096" layer="1"/>
 <wire x1="15.14" y1="16.74" x2="19.39" y2="20.99" width="0.6096" layer="1"/>
 <wire x1="19.39" y1="20.99" x2="26.32" y2="20.99" width="0.6096" layer="1"/>
+<wire x1="6.35" y1="13.97" x2="3.81" y2="13.97" width="0.254" layer="1"/>
+<wire x1="10.16" y1="10.16" x2="6.35" y2="13.97" width="0.254" layer="16"/>
+<wire x1="12.7" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="16"/>
+<wire x1="13.97" y1="11.43" x2="12.7" y2="10.16" width="0.254" layer="16"/>
+<wire x1="13.97" y1="13.97" x2="13.97" y2="11.43" width="0.254" layer="16"/>
+<wire x1="3.81" y1="13.97" x2="3.8" y2="13.55" width="0.254" layer="1"/>
+<wire x1="13.97" y1="13.97" x2="15.14" y2="14.82" width="0.254" layer="16"/>
+<wire x1="17.78" y1="5.08" x2="16.51" y2="3.81" width="0.254" layer="16"/>
+<wire x1="17.78" y1="10.16" x2="17.78" y2="5.08" width="0.254" layer="16"/>
+<wire x1="12.7" y1="10.16" x2="17.78" y2="10.16" width="0.254" layer="16"/>
+<wire x1="16.51" y1="3.81" x2="16.71" y2="3.98" width="0.254" layer="16"/>
+<via x="6.35" y="13.97" extent="1-16" drill="0.6096"/>
 </signal>
 <signal name="N$2">
 <contactref element="R2" pad="2"/>
@@ -1617,4 +1626,10 @@ design rules under a new name.</description>
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

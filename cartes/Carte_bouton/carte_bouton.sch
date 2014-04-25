@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -5292,12 +5292,12 @@ Source: www.kingbright.com</description>
 </class>
 </classes>
 <parts>
-<part name="U$3" library="jt-con-micromatch" deviceset="MMATCH-4-*" device=""/>
+<part name="CARTE_IA" library="jt-con-micromatch" deviceset="MMATCH-4-*" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="X1" library="con-molex" deviceset="22-23-2021" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
-<part name="S1" library="switch" deviceset="320-916" device=""/>
+<part name="COULEUR" library="switch" deviceset="320-916" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="R1" library="rcl" deviceset="R-US_" device="R0805"/>
@@ -5314,13 +5314,13 @@ Source: www.kingbright.com</description>
 <text x="50.8" y="69.85" size="5.08" layer="94">color switch</text>
 </plain>
 <instances>
-<instance part="U$3" gate="G$1" x="19.05" y="29.21"/>
+<instance part="CARTE_IA" gate="G$1" x="19.05" y="29.21"/>
 <instance part="+3V2" gate="G$1" x="9.525" y="36.195"/>
 <instance part="GND9" gate="1" x="9.525" y="24.765"/>
 <instance part="X1" gate="-1" x="68.58" y="34.29" rot="R90"/>
 <instance part="X1" gate="-2" x="71.755" y="34.29" rot="R90"/>
 <instance part="+3V1" gate="G$1" x="78.105" y="34.925"/>
-<instance part="S1" gate="1" x="40.005" y="50.165"/>
+<instance part="COULEUR" gate="1" x="40.005" y="50.165"/>
 <instance part="+3V3" gate="G$1" x="45.085" y="73.66"/>
 <instance part="GND1" gate="1" x="40.005" y="75.565" rot="R180"/>
 <instance part="R1" gate="G$1" x="43.18" y="21.59" rot="R90"/>
@@ -5335,13 +5335,13 @@ Source: www.kingbright.com</description>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="5"/>
+<pinref part="CARTE_IA" gate="G$1" pin="5"/>
 <wire x1="13.97" y1="29.21" x2="9.525" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="9.525" y1="29.21" x2="9.525" y2="27.305" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="S1" gate="1" pin="O"/>
+<pinref part="COULEUR" gate="1" pin="O"/>
 <wire x1="40.005" y1="55.245" x2="40.005" y2="66.675" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="ROUGE" gate="G$1" pin="C"/>
@@ -5358,7 +5358,7 @@ Source: www.kingbright.com</description>
 </net>
 <net name="+3V3" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="7"/>
+<pinref part="CARTE_IA" gate="G$1" pin="7"/>
 <wire x1="13.97" y1="31.75" x2="9.525" y2="31.75" width="0.1524" layer="91"/>
 <wire x1="9.525" y1="31.75" x2="9.525" y2="33.655" width="0.1524" layer="91"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
@@ -5371,7 +5371,7 @@ Source: www.kingbright.com</description>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="S1" gate="1" pin="S"/>
+<pinref part="COULEUR" gate="1" pin="S"/>
 <wire x1="45.085" y1="55.245" x2="45.085" y2="66.675" width="0.1524" layer="91"/>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
 <wire x1="45.085" y1="66.675" x2="45.085" y2="71.12" width="0.1524" layer="91"/>
@@ -5383,7 +5383,7 @@ Source: www.kingbright.com</description>
 </net>
 <net name="TIRETTE" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="6"/>
+<pinref part="CARTE_IA" gate="G$1" pin="6"/>
 <pinref part="X1" gate="-1" pin="S"/>
 <wire x1="24.13" y1="29.21" x2="43.18" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="29.21" x2="68.58" y2="29.21" width="0.1524" layer="91"/>
@@ -5395,8 +5395,8 @@ Source: www.kingbright.com</description>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="8"/>
-<pinref part="S1" gate="1" pin="P"/>
+<pinref part="CARTE_IA" gate="G$1" pin="8"/>
+<pinref part="COULEUR" gate="1" pin="P"/>
 <wire x1="24.13" y1="31.75" x2="27.94" y2="31.75" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="31.75" x2="42.545" y2="31.75" width="0.1524" layer="91"/>
 <wire x1="42.545" y1="31.75" x2="42.545" y2="45.085" width="0.1524" layer="91"/>

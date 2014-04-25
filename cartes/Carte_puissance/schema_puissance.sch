@@ -14489,7 +14489,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/409317160AD421_c.pdf</de
 <part name="LOGIC" library="led" deviceset="LED" device="SML0805"/>
 <part name="U$6" library="WEIDMULLER" deviceset="SL-3.5-2-90G" device=""/>
 <part name="U$7" library="WEIDMULLER" deviceset="SL-3.5-2-90G" device=""/>
-<part name="SV1" library="con-lsta" deviceset="FE06-1" device=""/>
+<part name="HEADER" library="con-lsta" deviceset="FE06-1" device=""/>
 <part name="P+13" library="supply1" deviceset="VCC" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="C11" library="rcl" deviceset="CPOL-EU" device="TT5D11" value="2200u"/>
@@ -14549,7 +14549,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/409317160AD421_c.pdf</de
 <instance part="LOGIC" gate="G$1" x="-66.04" y="-73.66" rot="R90"/>
 <instance part="U$6" gate="G$1" x="83.82" y="58.42" rot="R180"/>
 <instance part="U$7" gate="G$1" x="81.28" y="2.54" rot="R180"/>
-<instance part="SV1" gate="G$1" x="-121.92" y="17.78"/>
+<instance part="HEADER" gate="G$1" x="-121.92" y="17.78"/>
 <instance part="P+13" gate="VCC" x="-106.68" y="33.02"/>
 <instance part="GND12" gate="1" x="-96.52" y="33.02" rot="R180"/>
 <instance part="C11" gate="G$1" x="-142.24" y="66.04"/>
@@ -14846,7 +14846,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/409317160AD421_c.pdf</de
 <label x="-120.015" y="-47.625" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="G$1" pin="1"/>
+<pinref part="HEADER" gate="G$1" pin="1"/>
 <wire x1="-114.3" y1="12.7" x2="-104.14" y2="12.7" width="0.1524" layer="91"/>
 <label x="-104.14" y="12.7" size="1.778" layer="95"/>
 </segment>
@@ -14863,7 +14863,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/409317160AD421_c.pdf</de
 <label x="-120.015" y="-45.085" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="G$1" pin="2"/>
+<pinref part="HEADER" gate="G$1" pin="2"/>
 <wire x1="-114.3" y1="15.24" x2="-104.14" y2="15.24" width="0.1524" layer="91"/>
 <label x="-104.14" y="15.24" size="1.778" layer="95"/>
 </segment>
@@ -14880,7 +14880,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/409317160AD421_c.pdf</de
 <label x="-120.015" y="-42.545" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="G$1" pin="3"/>
+<pinref part="HEADER" gate="G$1" pin="3"/>
 <wire x1="-114.3" y1="17.78" x2="-104.14" y2="17.78" width="0.1524" layer="91"/>
 <label x="-104.14" y="17.78" size="1.778" layer="95"/>
 </segment>
@@ -14897,7 +14897,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/409317160AD421_c.pdf</de
 <label x="-120.015" y="-40.005" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="G$1" pin="4"/>
+<pinref part="HEADER" gate="G$1" pin="4"/>
 <wire x1="-114.3" y1="20.32" x2="-104.14" y2="20.32" width="0.1524" layer="91"/>
 <label x="-104.14" y="20.32" size="1.778" layer="95"/>
 </segment>
@@ -14914,7 +14914,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/409317160AD421_c.pdf</de
 <wire x1="-83.82" y1="-73.66" x2="-93.98" y2="-73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="G$1" pin="6"/>
+<pinref part="HEADER" gate="G$1" pin="6"/>
 <pinref part="P+13" gate="VCC" pin="VCC"/>
 <wire x1="-114.3" y1="25.4" x2="-106.68" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-106.68" y1="25.4" x2="-106.68" y2="30.48" width="0.1524" layer="91"/>
@@ -14943,7 +14943,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/409317160AD421_c.pdf</de
 <wire x1="-60.96" y1="-73.66" x2="-55.88" y2="-73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="G$1" pin="5"/>
+<pinref part="HEADER" gate="G$1" pin="5"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="-114.3" y1="22.86" x2="-96.52" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="-96.52" y1="22.86" x2="-96.52" y2="30.48" width="0.1524" layer="91"/>

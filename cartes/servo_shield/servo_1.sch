@@ -6965,9 +6965,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="202,1,91.44,-88.9,U4,VID,,,,"/>
-</errors>
 </schematic>
 </drawing>
 </eagle>
