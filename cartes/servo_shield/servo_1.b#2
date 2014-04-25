@@ -2682,7 +2682,7 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <circle x="-0.45" y="0.85" radius="0.103" width="0.1016" layer="51"/>
 <smd name="C" x="0" y="1.05" dx="1.2" dy="1.2" layer="1"/>
 <smd name="A" x="0" y="-1.05" dx="1.2" dy="1.2" layer="1"/>
-<text x="-1.27" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="-1.905" y="1.27" size="0.6096" layer="25" rot="R270">&gt;NAME</text>
 <text x="2.54" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 <rectangle x1="0.3" y1="0.5" x2="0.625" y2="1" layer="51"/>
 <rectangle x1="-0.325" y1="0.5" x2="-0.175" y2="0.75" layer="51"/>
@@ -3379,7 +3379,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <attribute name="MF" value="AVX" x="63.6905" y="26.924" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="MPN" value="08055A220JAT2A" x="63.6905" y="26.924" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="Q1" library="adafruit" package="HC49/S" value="16MHz" x="66.3575" y="30.1625" rot="R180">
+<element name="16MHZ" library="adafruit" package="HC49/S" value="16MHz" x="66.3575" y="30.1625" rot="R180">
 <attribute name="OC_NEWARK" value="unknown" x="5.3975" y="103.8225" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="HC49SM-3.6864-30-50-60-16-ATF" x="5.3975" y="103.8225" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="MULTICOMP" x="5.3975" y="103.8225" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3774,7 +3774,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 </signal>
 <signal name="N$2">
 <contactref element="C1" pad="2"/>
-<contactref element="Q1" pad="2"/>
+<contactref element="16MHZ" pad="2"/>
 <contactref element="CONTROLLER" pad="7"/>
 <wire x1="63.8302" y1="30.0482" x2="63.6524" y2="30.0482" width="0.254" layer="16"/>
 <wire x1="63.8302" y1="30.0482" x2="63.9445" y2="30.1625" width="0.254" layer="16"/>
@@ -3792,7 +3792,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <wire x1="62.9412" y1="26.0223" x2="62.7905" y2="26.924" width="0.254" layer="16"/>
 </signal>
 <signal name="N$3">
-<contactref element="Q1" pad="1"/>
+<contactref element="16MHZ" pad="1"/>
 <contactref element="C2" pad="2"/>
 <contactref element="CONTROLLER" pad="8"/>
 <wire x1="68.8086" y1="30.0482" x2="68.8086" y2="27.0256" width="0.254" layer="16"/>

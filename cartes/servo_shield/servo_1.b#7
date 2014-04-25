@@ -15,11 +15,11 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -145,10 +145,7 @@
 <text x="20.5105" y="27.6225" size="0.8128" layer="25">GND</text>
 <text x="43.18" y="27.178" size="0.8128" layer="26" rot="MR0">Tranceiver</text>
 <text x="64.8335" y="44.704" size="0.8128" layer="26" rot="MR0">Controller CAN</text>
-<text x="62.357" y="33.528" size="0.8128" layer="26" rot="MR0">ARDUINO</text>
 <text x="49.3014" y="40.6146" size="1.6764" layer="25" ratio="23" rot="R90">avec Dipole</text>
-<text x="57.2389" y="60.325" size="1.6764" layer="25" ratio="23">Carte</text>
-<text x="53.5686" y="58.0771" size="1.778" layer="25" ratio="23" distance="60">Actionneurs</text>
 <rectangle x1="46.228" y1="51.5366" x2="46.6852" y2="51.562" layer="200" rot="R90"/>
 <rectangle x1="45.7962" y1="47.7012" x2="47.0662" y2="47.7266" layer="200" rot="R90"/>
 <rectangle x1="46.2153" y1="48.9839" x2="46.6471" y2="49.0093" layer="200" rot="R90"/>
@@ -2579,6 +2576,9 @@
 <rectangle x1="35.179" y1="37.6428" x2="35.4838" y2="37.6682" layer="200" rot="R90"/>
 <rectangle x1="35.2044" y1="37.6428" x2="35.4076" y2="37.6682" layer="200" rot="R90"/>
 <text x="68.072" y="58.4708" size="0.0508" layer="25" font="vector" ratio="23" distance="60">2014</text>
+<text x="64.5414" y="42.2656" size="1.778" layer="26" rot="MR0">Carte</text>
+<text x="66.929" y="40.4368" size="1.778" layer="26" rot="MR0">Actionneurs</text>
+<text x="62.992" y="38.3032" size="1.778" layer="26" rot="MR0">2014</text>
 </plain>
 <libraries>
 <library name="SparkFun-DigitalIC">
@@ -3422,7 +3422,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <attribute name="OC_FARNELL" value="1814353" x="-2.54" y="92.075" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="ANALOG DEVICES" x="40.64" y="31.115" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="U$3" library="can_bus_servo" package="ARDUINO_PRO_MINI" value="ARDUINO_PRO_MINI'SERVO" x="59.69" y="49.2125">
+<element name="ARDUINO" library="can_bus_servo" package="ARDUINO_PRO_MINI" value="ARDUINO_PRO_MINI'SERVO" x="59.69" y="49.2125">
 <attribute name="OC_FARNELL" value="unknown" x="59.69" y="49.2125" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="59.69" y="49.2125" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="59.69" y="49.2125" size="1.778" layer="27" display="off"/>
@@ -3535,7 +3535,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <signals>
 <signal name="MOSI">
 <contactref element="CONTROLLER" pad="14"/>
-<contactref element="U$3" pad="14"/>
+<contactref element="ARDUINO" pad="14"/>
 <wire x1="54.9402" y1="52.451" x2="56.5404" y2="52.451" width="0.254" layer="16"/>
 <wire x1="63.4619" y1="43.8023" x2="54.9402" y2="52.451" width="0.254" layer="1"/>
 <wire x1="63.5889" y1="39.4843" x2="63.4619" y2="43.8023" width="0.254" layer="1"/>
@@ -3547,7 +3547,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 </signal>
 <signal name="MISO">
 <contactref element="CONTROLLER" pad="15"/>
-<contactref element="U$3" pad="15"/>
+<contactref element="ARDUINO" pad="15"/>
 <wire x1="54.9402" y1="53.6956" x2="56.5404" y2="53.6956" width="0.254" layer="16"/>
 <wire x1="65.4304" y1="43.2054" x2="54.9402" y2="53.6956" width="0.254" layer="1"/>
 <wire x1="65.4304" y1="33.9598" x2="65.4304" y2="43.2054" width="0.254" layer="1"/>
@@ -3561,7 +3561,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 </signal>
 <signal name="SCK">
 <contactref element="CONTROLLER" pad="13"/>
-<contactref element="U$3" pad="16"/>
+<contactref element="ARDUINO" pad="16"/>
 <wire x1="54.9402" y1="51.2064" x2="56.5404" y2="51.2064" width="0.254" layer="16"/>
 <wire x1="54.0512" y1="52.0954" x2="54.9402" y2="51.2064" width="0.254" layer="1"/>
 <wire x1="54.0512" y1="55.2958" x2="54.0512" y2="52.0954" width="0.254" layer="1"/>
@@ -3575,7 +3575,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <signal name="VCC">
 <contactref element="CONTROLLER" pad="18"/>
 <contactref element="TRANSCEIVER" pad="2"/>
-<contactref element="U$3" pad="VCC"/>
+<contactref element="ARDUINO" pad="VCC"/>
 <contactref element="ADUM1250" pad="1"/>
 <contactref element="ADUM1400_" pad="1"/>
 <contactref element="ADUM1400" pad="1"/>
@@ -3634,7 +3634,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <contactref element="R1" pad="2"/>
 <contactref element="C1" pad="1"/>
 <contactref element="C2" pad="1"/>
-<contactref element="U$3" pad="GND"/>
+<contactref element="ARDUINO" pad="GND"/>
 <contactref element="ADUM1250" pad="4"/>
 <contactref element="ADUM1400" pad="2"/>
 <contactref element="ADUM1400" pad="8"/>
@@ -3693,7 +3693,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 </signal>
 <signal name="RST">
 <contactref element="CONTROLLER" pad="17"/>
-<contactref element="U$3" pad="3"/>
+<contactref element="ARDUINO" pad="3"/>
 <wire x1="56.1848" y1="56.7182" x2="56.5404" y2="56.3626" width="0.254" layer="16"/>
 <wire x1="52.0954" y1="56.7182" x2="56.1848" y2="56.7182" width="0.254" layer="16"/>
 <wire x1="56.5404" y1="56.3626" x2="56.6928" y2="56.1975" width="0.254" layer="16"/>
@@ -3701,7 +3701,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 </signal>
 <signal name="CAN_CS">
 <contactref element="CONTROLLER" pad="16"/>
-<contactref element="U$3" pad="13"/>
+<contactref element="ARDUINO" pad="13"/>
 <wire x1="54.9402" y1="54.9402" x2="56.5404" y2="54.9402" width="0.254" layer="16"/>
 <wire x1="65.9638" y1="43.9166" x2="54.9402" y2="54.9402" width="0.254" layer="1"/>
 <wire x1="65.9638" y1="35.3822" x2="65.9638" y2="43.9166" width="0.254" layer="1"/>
@@ -3759,7 +3759,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 </signal>
 <signal name="CAN_INT">
 <contactref element="CONTROLLER" pad="12"/>
-<contactref element="U$3" pad="5"/>
+<contactref element="ARDUINO" pad="5"/>
 <wire x1="56.1848" y1="50.3174" x2="56.5404" y2="49.9618" width="0.254" layer="16"/>
 <wire x1="53.5178" y1="50.3174" x2="56.1848" y2="50.3174" width="0.254" layer="16"/>
 <wire x1="52.0954" y1="51.7398" x2="53.5178" y2="50.3174" width="0.254" layer="16"/>
@@ -3807,14 +3807,14 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <wire x1="68.6308" y1="30.226" x2="68.7705" y2="30.1625" width="0.254" layer="16"/>
 </signal>
 <signal name="RXI">
-<contactref element="U$3" pad="RXI"/>
+<contactref element="ARDUINO" pad="RXI"/>
 <contactref element="JP6" pad="2"/>
 <wire x1="60.8076" y1="64.5414" x2="60.8076" y2="66.8528" width="0.254" layer="1"/>
 <wire x1="60.8076" y1="66.8528" x2="60.6425" y2="67.437" width="0.254" layer="1"/>
 <wire x1="60.8076" y1="64.5414" x2="60.96" y2="64.4525" width="0.254" layer="1"/>
 </signal>
 <signal name="TXO">
-<contactref element="U$3" pad="TXO"/>
+<contactref element="ARDUINO" pad="TXO"/>
 <contactref element="JP6" pad="1"/>
 <contactref element="ADUM1250" pad="3"/>
 <wire x1="50.673" y1="52.6288" x2="50.673" y2="32.131" width="0.254" layer="1"/>
@@ -3831,7 +3831,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <wire x1="63.4746" y1="64.5414" x2="63.5" y2="64.4525" width="0.254" layer="1"/>
 </signal>
 <signal name="PWM9">
-<contactref element="U$3" pad="12"/>
+<contactref element="ARDUINO" pad="12"/>
 <contactref element="ADUM1400" pad="5"/>
 <wire x1="46.5836" y1="38.7604" x2="45.974" y2="39.37" width="0.254" layer="16"/>
 <wire x1="47.2948" y1="38.7604" x2="46.5836" y2="38.7604" width="0.254" layer="16"/>
@@ -3844,7 +3844,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <wire x1="52.0954" y1="33.9598" x2="52.07" y2="33.9725" width="0.2" layer="1"/>
 </signal>
 <signal name="PWM6">
-<contactref element="U$3" pad="9"/>
+<contactref element="ARDUINO" pad="9"/>
 <contactref element="ADUM1400_" pad="6"/>
 <wire x1="46.5836" y1="47.6504" x2="45.974" y2="48.26" width="0.254" layer="16"/>
 <wire x1="47.117" y1="47.6504" x2="46.5836" y2="47.6504" width="0.254" layer="16"/>
@@ -3860,7 +3860,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <wire x1="52.0954" y1="41.4274" x2="52.07" y2="41.5925" width="0.2" layer="1"/>
 </signal>
 <signal name="PWM5">
-<contactref element="U$3" pad="8"/>
+<contactref element="ARDUINO" pad="8"/>
 <contactref element="ADUM1400_" pad="5"/>
 <wire x1="46.5836" y1="48.895" x2="46.0502" y2="49.4284" width="0.254" layer="16"/>
 <wire x1="47.2948" y1="48.895" x2="46.5836" y2="48.895" width="0.254" layer="16"/>
@@ -3869,7 +3869,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <wire x1="51.9176" y1="44.2722" x2="52.07" y2="44.1325" width="0.254" layer="16"/>
 </signal>
 <signal name="PWM3">
-<contactref element="U$3" pad="6"/>
+<contactref element="ARDUINO" pad="6"/>
 <contactref element="ADUM1400_" pad="3"/>
 <wire x1="46.4058" y1="51.562" x2="46.0502" y2="51.9176" width="0.254" layer="16"/>
 <wire x1="49.6062" y1="51.562" x2="46.4058" y2="51.562" width="0.254" layer="16"/>
@@ -4155,7 +4155,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <wire x1="28.0924" y1="47.8282" x2="28.0375" y2="47.9425" width="0.254" layer="1"/>
 </signal>
 <signal name="OUT8">
-<contactref element="U$3" pad="11"/>
+<contactref element="ARDUINO" pad="11"/>
 <contactref element="PUISSANCE" pad="3"/>
 <contactref element="ADUM1400" pad="4"/>
 <wire x1="46.5836" y1="40.005" x2="46.0502" y2="40.5384" width="0.254" layer="16"/>
@@ -4176,7 +4176,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <via x="47.4726" y="40.005" extent="1-16" drill="0.3"/>
 </signal>
 <signal name="OUT7">
-<contactref element="U$3" pad="10"/>
+<contactref element="ARDUINO" pad="10"/>
 <contactref element="PUISSANCE" pad="5"/>
 <contactref element="ADUM1400" pad="3"/>
 <wire x1="46.5836" y1="41.2496" x2="46.0502" y2="41.783" width="0.254" layer="16"/>
@@ -4190,7 +4190,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <wire x1="52.0954" y1="38.9382" x2="52.07" y2="39.0525" width="0.2" layer="1"/>
 </signal>
 <signal name="OUT4">
-<contactref element="U$3" pad="7"/>
+<contactref element="ARDUINO" pad="7"/>
 <contactref element="ADUM1400_" pad="4"/>
 <wire x1="46.5836" y1="50.1396" x2="46.0502" y2="50.673" width="0.254" layer="16"/>
 <wire x1="48.5394" y1="50.1396" x2="46.5836" y2="50.1396" width="0.254" layer="16"/>

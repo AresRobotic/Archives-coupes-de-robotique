@@ -8,8 +8,8 @@
 </settings>
 <grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.0025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -143,7 +143,6 @@
 <text x="20.2565" y="30.607" size="0.8128" layer="25">DATA</text>
 <text x="20.3835" y="29.21" size="0.8128" layer="25">12V</text>
 <text x="20.5105" y="27.6225" size="0.8128" layer="25">GND</text>
-<text x="43.18" y="27.178" size="0.8128" layer="26" rot="MR0">Tranceiver</text>
 <text x="64.8335" y="44.704" size="0.8128" layer="26" rot="MR0">Controller CAN</text>
 <text x="49.3014" y="40.6146" size="1.6764" layer="25" ratio="23" rot="R90">avec Dipole</text>
 <rectangle x1="46.1518" y1="49.657" x2="46.609" y2="49.6824" layer="200" rot="R90"/>
@@ -2683,7 +2682,7 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <circle x="-0.45" y="0.85" radius="0.103" width="0.1016" layer="51"/>
 <smd name="C" x="0" y="1.05" dx="1.2" dy="1.2" layer="1"/>
 <smd name="A" x="0" y="-1.05" dx="1.2" dy="1.2" layer="1"/>
-<text x="-1.27" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="-1.905" y="1.27" size="0.6096" layer="25" rot="R270">&gt;NAME</text>
 <text x="2.54" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 <rectangle x1="0.3" y1="0.5" x2="0.625" y2="1" layer="51"/>
 <rectangle x1="-0.325" y1="0.5" x2="-0.175" y2="0.75" layer="51"/>
