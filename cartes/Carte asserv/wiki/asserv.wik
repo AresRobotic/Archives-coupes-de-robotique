@@ -1,0 +1,22 @@
+{| class="wikitable" border="1"
+|+ C:/Users/Cedric/Google Drive/Mes Documents/eagle/Carte asserv/board.brd
+!Part!!Quantity!!Value!!Package
+|-
+|C1||1||100n||C0805
+|-
+|CAN,COMMAND||2||MICROMATCH-8||MICROMATCH-8
+|-
+|JP1||1||||JP2W
+|-
+|ODO_D,ODO_G,UART||3||||MA04-1
+|-
+|R1||1||21k||R0805
+|-
+|R5||1||120||M0805
+|-
+|TIVA||1||STELLARIS-LAUNCHPADSTELLARIS-LAUNCHPAD||LAUNCHPAD-XL
+|-
+|U$1||1||MCP2551||SOIC_8
+|-
+|X1,X2||2||MICROMATCH-6||MICROMATCH-6
+|}

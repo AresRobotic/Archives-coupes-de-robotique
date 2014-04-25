@@ -1,0 +1,32 @@
+{| class="wikitable" border="1"
+|+ C:/Users/Cedric/Google Drive/Mes Documents/eagle/Carte plan B/board.brd
+!Part!!Quantity!!Value!!Package
+|-
+|12V||1||WEIDMULLER 2||90G-2
+|-
+|AX12-1,AX12-2||2||molex-3||22-23-2031
+|-
+|C1||1||100n||C0805
+|-
+|C2||1||100u||0805
+|-
+|CAN,COMMAND||2||micromatch-8||MICROMATCH-8
+|-
+|I2C||1||header-2||22-23-2021
+|-
+|ISOLATEURGALVANIQUE||1||ADUM1250ARZ||SOIC127P600X175-8N
+|-
+|JUMPERCAN||1||header-3||JP2W
+|-
+|MBED||1||MBED_NXP_LPC1768||MBED-KIT
+|-
+|ODO_D,ODO_G||2||header-4||MA04-1
+|-
+|R1||1||21k||R0805
+|-
+|R5||1||120||M0805
+|-
+|SHARP1,SHARP2,SHARP3,SHARP4||4||header-3||22-23-2031
+|-
+|TRANSCEIVER||1||MCP2551||SOIC_8
+|}
