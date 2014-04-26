@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.4" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.0635" altunitdist="mm" altunit="mm"/>
+<grid distance="0.4" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.0635" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -3231,13 +3231,15 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <wire x1="12.2682" y1="42.3164" x2="11.0236" y2="41.0718" width="0.2" layer="1"/>
 <wire x1="12.2682" y1="45.8724" x2="12.2682" y2="42.3164" width="0.2" layer="1"/>
 <wire x1="11.0236" y1="41.0718" x2="10.9855" y2="40.9575" width="0.2" layer="1"/>
-<wire x1="4.445" y1="23.6474" x2="8.3566" y2="23.6474" width="0.2" layer="1"/>
-<wire x1="4.445" y1="36.8046" x2="4.445" y2="23.6474" width="0.2" layer="1"/>
+<wire x1="4.445" y1="36.8046" x2="4.445" y2="24.43599375" width="0.2" layer="1"/>
+<wire x1="4.445" y1="24.43599375" x2="5.23359375" y2="23.6474" width="0.2" layer="1"/>
+<wire x1="5.23359375" y1="23.6474" x2="8.3566" y2="23.6474" width="0.2" layer="1"/>
 <wire x1="6.223" y1="38.5826" x2="4.445" y2="36.8046" width="0.2" layer="1"/>
 <wire x1="6.223" y1="38.5826" x2="6.35" y2="38.679121875" width="0.2" layer="1"/>
 <wire x1="15.2908" y1="50.8508" x2="12.2682" y2="47.8282" width="0.2" layer="1"/>
-<wire x1="24.003" y1="50.8508" x2="15.2908" y2="50.8508" width="0.2" layer="1"/>
-<wire x1="24.003" y1="49.6062" x2="24.003" y2="50.8508" width="0.2" layer="1"/>
+<wire x1="24.003" y1="49.6062" x2="24.003" y2="50.31210625" width="0.2" layer="1"/>
+<wire x1="24.003" y1="50.31210625" x2="23.46430625" y2="50.8508" width="0.2" layer="1"/>
+<wire x1="23.46430625" y1="50.8508" x2="15.2908" y2="50.8508" width="0.2" layer="1"/>
 <wire x1="24.003" y1="49.6062" x2="24.13" y2="49.53" width="0.2" layer="1"/>
 </signal>
 <signal name="GND">
@@ -3273,7 +3275,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <contactref element="C7" pad="2"/>
 <contactref element="CAN" pad="1"/>
 <contactref element="CAN" pad="8"/>
-<wire x1="15.1638" y1="44.45" x2="11.1125" y2="46.482" width="0" layer="19" extent="1-1"/>
+<via x="13.49248125" y="42.204640625" extent="1-16" drill="0.3"/>
 </signal>
 <signal name="CAN_TXD">
 <contactref element="U1" pad="1"/>
@@ -3402,8 +3404,9 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <wire x1="7.2898" y1="24.5364" x2="7.112" y2="24.7142" width="0.2" layer="16"/>
 <wire x1="9.9568" y1="24.5364" x2="7.2898" y2="24.5364" width="0.2" layer="16"/>
 <wire x1="11.557" y1="22.9362" x2="9.9568" y2="24.5364" width="0.2" layer="16"/>
-<wire x1="11.557" y1="20.9804" x2="11.557" y2="22.9362" width="0.2" layer="16"/>
-<wire x1="9.6012" y1="20.9804" x2="11.557" y2="20.9804" width="0.2" layer="16"/>
+<wire x1="9.6012" y1="20.9804" x2="11.238578125" y2="20.9804" width="0.2" layer="16"/>
+<wire x1="11.238578125" y1="20.9804" x2="11.557" y2="21.298821875" width="0.2" layer="16"/>
+<wire x1="11.557" y1="21.298821875" x2="11.557" y2="22.9362" width="0.2" layer="16"/>
 <wire x1="7.112" y1="24.7142" x2="6.985" y2="24.765" width="0.2" layer="16"/>
 <wire x1="9.6012" y1="20.9804" x2="9.525" y2="20.955" width="0.2" layer="16"/>
 </signal>
@@ -3528,8 +3531,9 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <signal name="A3">
 <contactref element="ARDUINO" pad="20"/>
 <contactref element="A3" pad="1"/>
-<wire x1="31.2928" y1="49.6062" x2="40.005" y2="49.6062" width="0.2" layer="1"/>
-<wire x1="31.2928" y1="48.006" x2="31.2928" y2="49.6062" width="0.2" layer="1"/>
+<wire x1="31.2928" y1="48.006" x2="31.2928" y2="49.098684375" width="0.2" layer="1"/>
+<wire x1="31.2928" y1="49.098684375" x2="31.800315625" y2="49.6062" width="0.2" layer="1"/>
+<wire x1="31.800315625" y1="49.6062" x2="40.005" y2="49.6062" width="0.2" layer="1"/>
 <wire x1="25.4254" y1="42.1386" x2="31.2928" y2="48.006" width="0.2" layer="16"/>
 <wire x1="24.1808" y1="42.1386" x2="25.4254" y2="42.1386" width="0.2" layer="16"/>
 <wire x1="19.0246" y1="36.9824" x2="24.1808" y2="42.1386" width="0.2" layer="16"/>

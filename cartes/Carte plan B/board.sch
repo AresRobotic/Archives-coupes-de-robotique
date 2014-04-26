@@ -49,6 +49,7 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -79,11 +80,18 @@
 <layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
+<layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
+<layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
@@ -110,6 +118,8 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
@@ -6400,6 +6410,12 @@ Based on the following sources :
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="VCC">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
@@ -6419,6 +6435,19 @@ Based on the following sources :
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="+5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VCC" prefix="P+">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="VCC" symbol="VCC" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -13497,6 +13526,90 @@ at 31/07/2012 09:37:13</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="jt-con-micromatch">
+<description>AMP Micromatch connectors by Jason Tribbeck</description>
+<packages>
+<package name="AMP-215079-6">
+<wire x1="-1.555" y1="3.77" x2="7.905" y2="3.77" width="0.127" layer="21"/>
+<wire x1="7.905" y1="3.77" x2="7.905" y2="2.77" width="0.127" layer="21"/>
+<wire x1="7.905" y1="-0.23" x2="7.905" y2="-1.23" width="0.127" layer="21"/>
+<wire x1="7.905" y1="-1.23" x2="-1.555" y2="-1.23" width="0.127" layer="21"/>
+<wire x1="-1.555" y1="-1.23" x2="-1.555" y2="-0.23" width="0.127" layer="21"/>
+<wire x1="-1.555" y1="2.77" x2="-1.555" y2="3.77" width="0.127" layer="21"/>
+<wire x1="-1.555" y1="2.77" x2="-1.055" y2="2.77" width="0.127" layer="21"/>
+<wire x1="-1.055" y1="2.77" x2="-1.055" y2="-0.23" width="0.127" layer="21"/>
+<wire x1="-1.055" y1="-0.23" x2="-1.555" y2="-0.23" width="0.127" layer="21"/>
+<wire x1="7.905" y1="2.77" x2="7.405" y2="2.77" width="0.127" layer="21"/>
+<wire x1="7.405" y1="2.77" x2="7.405" y2="-0.23" width="0.127" layer="21"/>
+<wire x1="7.405" y1="-0.23" x2="7.905" y2="-0.23" width="0.127" layer="21"/>
+<wire x1="-1.055" y1="2.77" x2="-1.055" y2="3.27" width="0.127" layer="51"/>
+<wire x1="-1.055" y1="3.27" x2="7.405" y2="3.27" width="0.127" layer="51"/>
+<wire x1="7.405" y1="3.27" x2="7.405" y2="2.77" width="0.127" layer="51"/>
+<wire x1="-1.055" y1="-0.23" x2="-1.055" y2="-0.73" width="0.127" layer="51"/>
+<wire x1="-1.055" y1="-0.73" x2="7.405" y2="-0.73" width="0.127" layer="51"/>
+<wire x1="7.405" y1="-0.73" x2="7.405" y2="-0.23" width="0.127" layer="51"/>
+<pad name="1" x="0" y="0" drill="0.8" diameter="1.4224"/>
+<pad name="2" x="1.27" y="2.54" drill="0.8" diameter="1.4224"/>
+<pad name="3" x="2.54" y="0" drill="0.8" diameter="1.4224"/>
+<pad name="4" x="3.81" y="2.54" drill="0.8" diameter="1.4224"/>
+<pad name="5" x="5.08" y="0" drill="0.8" diameter="1.4224"/>
+<pad name="6" x="6.35" y="2.54" drill="0.8" diameter="1.4224"/>
+<text x="-1.055" y="4.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.055" y="-2.73" size="1.27" layer="27">&gt;VALUE</text>
+<hole x="-1.62" y="2.175" drill="1.5"/>
+</package>
+</packages>
+<symbols>
+<symbol name="CON-6">
+<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-1.016" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-1.016" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.016" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.016" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="1.016" y2="2.54" width="0.254" layer="94"/>
+<text x="-2.54" y="5.588" size="1.27" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-6.858" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="3" x="-5.08" y="-2.54" visible="pad" length="short"/>
+<pin name="5" x="-5.08" y="0" visible="pad" length="short"/>
+<pin name="7" x="-5.08" y="2.54" visible="pad" length="short"/>
+<pin name="8" x="5.08" y="2.54" visible="pad" length="short" rot="R180"/>
+<pin name="6" x="5.08" y="0" visible="pad" length="short" rot="R180"/>
+<pin name="4" x="5.08" y="-2.54" visible="pad" length="short" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MMATCH-6-*">
+<gates>
+<gate name="G$1" symbol="CON-6" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="AMP-215079-6">
+<connects>
+<connect gate="G$1" pin="3" pad="1"/>
+<connect gate="G$1" pin="4" pad="2"/>
+<connect gate="G$1" pin="5" pad="3"/>
+<connect gate="G$1" pin="6" pad="4"/>
+<connect gate="G$1" pin="7" pad="5"/>
+<connect gate="G$1" pin="8" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -13504,6 +13617,9 @@ at 31/07/2012 09:37:13</description>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
+</class>
+<class number="1" name="+5V" width="0.6" drill="0.2">
+<clearance class="1" value="0.4"/>
 </class>
 </classes>
 <parts>
@@ -13518,7 +13634,6 @@ at 31/07/2012 09:37:13</description>
 <part name="I2C" library="con-molex" deviceset="22-23-2021" device="" value="header-2"/>
 <part name="AX12-1" library="con-molex" deviceset="22-23-2031" device="" value="molex-3"/>
 <part name="AX12-2" library="con-molex" deviceset="22-23-2031" device="" value="molex-3"/>
-<part name="COMMAND" library="con-amp-micromatch" deviceset="MICROMATCH-8" device="" value="micromatch-8"/>
 <part name="ODO_G" library="con-lstb" deviceset="MA04-1" device="" value="header-4"/>
 <part name="ODO_D" library="con-lstb" deviceset="MA04-1" device="" value="header-4"/>
 <part name="12V" library="con-weidmueller-sl35" deviceset="90G-2" device="" value="WEIDMULLER 2"/>
@@ -13529,6 +13644,10 @@ at 31/07/2012 09:37:13</description>
 <part name="ISOLATEURGALVANIQUE" library="Analog Devices_By_element14_Batch_1" deviceset="ADUM1250ARZ" device=""/>
 <part name="C2" library="mbed-rlcq" deviceset="C" device="0805" value="100u"/>
 <part name="JUMPER" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="R2" library="rcl" deviceset="R-US_" device="M0805" value="120"/>
+<part name="COMMAND" library="jt-con-micromatch" deviceset="MMATCH-6-*" device=""/>
+<part name="+5V" library="supply1" deviceset="VCC" device="" value="+5v"/>
+<part name="GND2" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13573,14 +13692,6 @@ Réalisée par Cédric PILLET</text>
 <instance part="AX12-2" gate="-1" x="281.94" y="76.2"/>
 <instance part="AX12-2" gate="-2" x="281.94" y="73.66"/>
 <instance part="AX12-2" gate="-3" x="281.94" y="71.12"/>
-<instance part="COMMAND" gate="-1" x="317.5" y="88.9"/>
-<instance part="COMMAND" gate="-2" x="317.5" y="86.36"/>
-<instance part="COMMAND" gate="-3" x="317.5" y="83.82"/>
-<instance part="COMMAND" gate="-4" x="317.5" y="81.28"/>
-<instance part="COMMAND" gate="-5" x="317.5" y="78.74"/>
-<instance part="COMMAND" gate="-6" x="317.5" y="76.2"/>
-<instance part="COMMAND" gate="-7" x="317.5" y="73.66"/>
-<instance part="COMMAND" gate="-8" x="317.5" y="71.12"/>
 <instance part="ODO_G" gate="1" x="190.5" y="38.1" rot="R180"/>
 <instance part="ODO_D" gate="1" x="190.5" y="17.78" rot="R180"/>
 <instance part="12V" gate="G$1" x="43.18" y="86.36"/>
@@ -13599,6 +13710,10 @@ Réalisée par Cédric PILLET</text>
 <instance part="ISOLATEURGALVANIQUE" gate="A" x="71.12" y="63.5"/>
 <instance part="C2" gate="G$1" x="256.54" y="99.06"/>
 <instance part="JUMPER" gate="A" x="83.82" y="134.62" rot="MR0"/>
+<instance part="R2" gate="G$1" x="254" y="78.74" rot="R270"/>
+<instance part="COMMAND" gate="G$1" x="330.2" y="87.63"/>
+<instance part="+5V" gate="VCC" x="318.77" y="77.47" rot="R180"/>
+<instance part="GND2" gate="1" x="340.36" y="77.47"/>
 </instances>
 <busses>
 </busses>
@@ -13626,11 +13741,6 @@ Réalisée par Cédric PILLET</text>
 <pinref part="C1" gate="G$1" pin="1"/>
 <junction x="109.22" y="167.64"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="COMMAND" gate="-2" pin="S"/>
-<wire x1="322.58" y1="86.36" x2="330.2" y2="86.36" width="0.1524" layer="91"/>
-<label x="335.28" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="ODO_G" gate="1" pin="4"/>
@@ -13672,6 +13782,12 @@ Réalisée par Cédric PILLET</text>
 <wire x1="208.28" y1="71.12" x2="200.66" y2="71.12" width="0.1524" layer="91"/>
 <label x="187.96" y="71.12" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="COMMAND" gate="G$1" pin="4"/>
+<wire x1="335.28" y1="85.09" x2="340.36" y2="85.09" width="0.1524" layer="91"/>
+<wire x1="340.36" y1="85.09" x2="340.36" y2="80.01" width="0.1524" layer="91"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -13692,11 +13808,6 @@ Réalisée par Cédric PILLET</text>
 <wire x1="116.84" y1="167.64" x2="116.84" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <junction x="116.84" y="167.64"/>
-</segment>
-<segment>
-<pinref part="COMMAND" gate="-1" pin="S"/>
-<wire x1="322.58" y1="88.9" x2="330.2" y2="88.9" width="0.1524" layer="91"/>
-<label x="335.28" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="ODO_G" gate="1" pin="1"/>
@@ -13737,6 +13848,12 @@ Réalisée par Cédric PILLET</text>
 <pinref part="SHARP3" gate="-3" pin="S"/>
 <wire x1="157.48" y1="68.58" x2="149.86" y2="68.58" width="0.1524" layer="91"/>
 <label x="137.16" y="68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="COMMAND" gate="G$1" pin="3"/>
+<wire x1="325.12" y1="85.09" x2="318.77" y2="85.09" width="0.1524" layer="91"/>
+<wire x1="318.77" y1="85.09" x2="318.77" y2="80.01" width="0.1524" layer="91"/>
+<pinref part="+5V" gate="VCC" pin="VCC"/>
 </segment>
 </net>
 <net name="CANL" class="0">
@@ -13871,6 +13988,11 @@ Réalisée par Cédric PILLET</text>
 <wire x1="256.54" y1="101.6" x2="256.54" y2="104.14" width="0.1524" layer="91"/>
 <label x="251.46" y="106.68" size="1.9304" layer="95"/>
 </segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="254" y1="83.82" x2="254" y2="86.36" width="0.1524" layer="91"/>
+<label x="259.08" y="83.82" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="DATA_AX12" class="0">
 <segment>
@@ -13891,64 +14013,50 @@ Réalisée par Cédric PILLET</text>
 </net>
 <net name="PWM_MOT2" class="0">
 <segment>
-<pinref part="COMMAND" gate="-3" pin="S"/>
-<wire x1="322.58" y1="83.82" x2="330.2" y2="83.82" width="0.1524" layer="91"/>
-<label x="335.28" y="83.82" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="MBED" gate="KIT" pin="P24"/>
 <wire x1="274.32" y1="137.16" x2="279.4" y2="137.16" width="0.1524" layer="91"/>
 <label x="279.4" y="137.16" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="COMMAND" gate="G$1" pin="8"/>
+<wire x1="335.28" y1="90.17" x2="340.36" y2="90.17" width="0.1524" layer="91"/>
+<label x="340.36" y="90.17" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="DIR2" class="0">
-<segment>
-<pinref part="COMMAND" gate="-4" pin="S"/>
-<wire x1="322.58" y1="81.28" x2="330.2" y2="81.28" width="0.1524" layer="91"/>
-<label x="335.28" y="81.28" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="MBED" gate="KIT" pin="P23"/>
 <wire x1="274.32" y1="134.62" x2="279.4" y2="134.62" width="0.1524" layer="91"/>
 <label x="279.4" y="134.62" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="TF2" class="0">
 <segment>
-<pinref part="COMMAND" gate="-5" pin="S"/>
-<wire x1="322.58" y1="78.74" x2="330.2" y2="78.74" width="0.1524" layer="91"/>
-<label x="335.28" y="78.74" size="1.778" layer="95"/>
+<pinref part="COMMAND" gate="G$1" pin="7"/>
+<wire x1="325.12" y1="90.17" x2="320.04" y2="90.17" width="0.1524" layer="91"/>
+<label x="320.04" y="90.17" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PWM_MOT1" class="0">
-<segment>
-<pinref part="COMMAND" gate="-6" pin="S"/>
-<wire x1="322.58" y1="76.2" x2="330.2" y2="76.2" width="0.1524" layer="91"/>
-<label x="335.28" y="76.2" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="MBED" gate="KIT" pin="P22"/>
 <wire x1="274.32" y1="132.08" x2="279.4" y2="132.08" width="0.1524" layer="91"/>
 <label x="279.4" y="132.08" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="COMMAND" gate="G$1" pin="6"/>
+<wire x1="335.28" y1="87.63" x2="340.36" y2="87.63" width="0.1524" layer="91"/>
+<label x="340.36" y="87.63" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="DIR1" class="0">
-<segment>
-<pinref part="COMMAND" gate="-7" pin="S"/>
-<wire x1="322.58" y1="73.66" x2="330.2" y2="73.66" width="0.1524" layer="91"/>
-<label x="335.28" y="73.66" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="MBED" gate="KIT" pin="P21"/>
 <wire x1="274.32" y1="129.54" x2="279.4" y2="129.54" width="0.1524" layer="91"/>
 <label x="279.4" y="129.54" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="TF1" class="0">
 <segment>
-<pinref part="COMMAND" gate="-8" pin="S"/>
-<wire x1="322.58" y1="71.12" x2="330.2" y2="71.12" width="0.1524" layer="91"/>
-<label x="335.28" y="71.12" size="1.778" layer="95"/>
+<pinref part="COMMAND" gate="G$1" pin="5"/>
+<wire x1="325.12" y1="87.63" x2="320.04" y2="87.63" width="0.1524" layer="91"/>
+<label x="320.04" y="87.63" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="CHA_G" class="0">
@@ -14089,6 +14197,11 @@ Réalisée par Cédric PILLET</text>
 <pinref part="AX12-1" gate="-3" pin="S"/>
 <wire x1="279.4" y1="86.36" x2="271.78" y2="86.36" width="0.1524" layer="91"/>
 <label x="259.08" y="86.36" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="254" y1="73.66" x2="254" y2="68.58" width="0.1524" layer="91"/>
+<label x="251.46" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

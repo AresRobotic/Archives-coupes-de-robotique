@@ -5295,7 +5295,7 @@ Source: www.kingbright.com</description>
 <part name="CARTE_IA" library="jt-con-micromatch" deviceset="MMATCH-4-*" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
-<part name="X1" library="con-molex" deviceset="22-23-2021" device=""/>
+<part name="TIRETTE" library="con-molex" deviceset="22-23-2021" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="COULEUR" library="switch" deviceset="320-916" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
@@ -5317,8 +5317,8 @@ Source: www.kingbright.com</description>
 <instance part="CARTE_IA" gate="G$1" x="19.05" y="29.21"/>
 <instance part="+3V2" gate="G$1" x="9.525" y="36.195"/>
 <instance part="GND9" gate="1" x="9.525" y="24.765"/>
-<instance part="X1" gate="-1" x="68.58" y="34.29" rot="R90"/>
-<instance part="X1" gate="-2" x="71.755" y="34.29" rot="R90"/>
+<instance part="TIRETTE" gate="-1" x="68.58" y="34.29" rot="R90"/>
+<instance part="TIRETTE" gate="-2" x="71.755" y="34.29" rot="R90"/>
 <instance part="+3V1" gate="G$1" x="78.105" y="34.925"/>
 <instance part="COULEUR" gate="1" x="40.005" y="50.165"/>
 <instance part="+3V3" gate="G$1" x="45.085" y="73.66"/>
@@ -5364,7 +5364,7 @@ Source: www.kingbright.com</description>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-2" pin="S"/>
+<pinref part="TIRETTE" gate="-2" pin="S"/>
 <wire x1="71.755" y1="31.75" x2="71.755" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="71.755" y1="29.21" x2="78.105" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="78.105" y1="29.21" x2="78.105" y2="32.385" width="0.1524" layer="91"/>
@@ -5384,7 +5384,7 @@ Source: www.kingbright.com</description>
 <net name="TIRETTE" class="0">
 <segment>
 <pinref part="CARTE_IA" gate="G$1" pin="6"/>
-<pinref part="X1" gate="-1" pin="S"/>
+<pinref part="TIRETTE" gate="-1" pin="S"/>
 <wire x1="24.13" y1="29.21" x2="43.18" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="29.21" x2="68.58" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="29.21" x2="68.58" y2="31.75" width="0.1524" layer="91"/>
