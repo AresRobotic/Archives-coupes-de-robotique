@@ -127,9 +127,9 @@
 <wire x1="45.39" y1="13.843" x2="45.644" y2="51.171" width="0" layer="20"/>
 <wire x1="45.644" y1="51.171" x2="0.8255" y2="51.298" width="0" layer="20"/>
 <wire x1="0.8255" y1="51.298" x2="0.762" y2="13.9065" width="0" layer="20"/>
-<text x="3.0962625" y="17.77491875" size="1.27" layer="25" rot="R90">Carte Sharp-CAN</text>
-<text x="11.407140625" y="14.516103125" size="1.778" layer="25">ARES 2014</text>
-<text x="26.174696875" y="14.83105625" size="1.27" layer="25">&amp; Dipole</text>
+<text x="3.2385" y="18.415" size="1.27" layer="25" rot="R90">Carte Sharp-CAN</text>
+<text x="8.3185" y="14.4145" size="1.778" layer="25">ARES 2014</text>
+<text x="22.6695" y="14.6685" size="1.27" layer="25">&amp; Dipole</text>
 <rectangle x1="25.344121875" y1="32.8422" x2="25.527003125" y2="32.85235625" layer="200"/>
 <rectangle x1="23.647403125" y1="32.852359375" x2="24.155403125" y2="32.862515625" layer="200"/>
 <rectangle x1="24.328121875" y1="32.852359375" x2="24.500840625" y2="32.862515625" layer="200"/>
@@ -3078,7 +3078,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 </autorouter>
 <elements>
 <element name="U1" library="SparkFun-DigitalIC" package="SO08" value="MCP2551" x="17.78" y="45.085" rot="R270"/>
-<element name="C1" library="SparkFun-Capacitors" package="0805" value="22pF" x="28.646115625" y="44.033440625" rot="R90"/>
+<element name="C1" library="SparkFun-Capacitors" package="0805" value="22pF" x="28.575" y="45.72" rot="R270"/>
 <element name="16MHZ" library="adafruit" package="HC49/S" value="16MHz" x="25.4" y="42.545" rot="R90">
 <attribute name="OC_NEWARK" value="unknown" x="66.04" y="61.595" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="66.04" y="61.595" size="1.778" layer="27" rot="R90" display="off"/>
@@ -3089,19 +3089,19 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <element name="R1" library="SparkFun-Passives" package="0805" value="4,7k" x="6.985" y="30.48" rot="R270"/>
 <element name="R2" library="SparkFun-Passives" package="0805" value="120" x="12.6365" y="23.5585" rot="R90"/>
 <element name="CONTROLLER" library="MCP2515_MT" package="SO18L" value="MCP2515SO" x="26.035" y="23.495" rot="R270"/>
-<element name="A3" library="pinhead" package="1X03/90" value="" x="44.155359375" y="44.98848125" rot="R270"/>
-<element name="A0" library="pinhead" package="1X03/90" value="" x="44.3992" y="20.87371875" rot="R270"/>
-<element name="A1" library="pinhead" package="1X03/90" value="" x="44.376340625" y="28.801059375" rot="R270"/>
+<element name="A3" library="pinhead" package="1X03/90" value="" x="43.942" y="46.99" rot="R270"/>
+<element name="A0" library="pinhead" package="1X03/90" value="" x="43.688" y="18.161" rot="R270"/>
+<element name="A1" library="pinhead" package="1X03/90" value="" x="43.8785" y="27.3685" rot="R270"/>
 <element name="A4" library="pinhead" package="1X03/90" value="" x="2.54" y="36.139121875" rot="R90"/>
 <element name="C3" library="SparkFun-Capacitors" package="CPOL-RADIAL-10UF-25V" value="" x="36.195" y="45.085" rot="R270"/>
-<element name="C4" library="SparkFun-Capacitors" package="CPOL-RADIAL-10UF-25V" value="" x="10.523221875" y="39.469059375" rot="R270"/>
+<element name="C4" library="SparkFun-Capacitors" package="CPOL-RADIAL-10UF-25V" value="" x="10.9855" y="39.6875" rot="R90"/>
 <element name="C5" library="SparkFun-Capacitors" package="CPOL-RADIAL-10UF-25V" value="" x="36.195" y="26.67" rot="R270"/>
 <element name="C6" library="SparkFun-Capacitors" package="CPOL-RADIAL-10UF-25V" value="" x="36.195" y="17.7165" rot="R270"/>
 <element name="ARDUINO" library="sharp_shield" package="ARDUINO_PRO_MINI" value="ARDUINO_PRO_MINI" x="22.86" y="34.29" rot="MR0"/>
 <element name="A2" library="pinhead" package="1X03/90" value="" x="44.196" y="36.8935" rot="R270"/>
 <element name="A5" library="pinhead" package="1X03/90" value="" x="2.51968125" y="44.4119" rot="R90"/>
 <element name="C7" library="SparkFun-Capacitors" package="CPOL-RADIAL-10UF-25V" value="" x="36.195" y="35.687" rot="R270"/>
-<element name="C8" library="SparkFun-Capacitors" package="CPOL-RADIAL-10UF-25V" value="" x="11.031221875" y="46.6344" rot="R90"/>
+<element name="C8" library="SparkFun-Capacitors" package="CPOL-RADIAL-10UF-25V" value="" x="11.1125" y="47.752" rot="R90"/>
 <element name="CAN" library="jt-con-micromatch" package="AMP-215079-8" value="" x="8.255" y="18.415" rot="R90"/>
 <element name="CAN_S" library="SparkFun-Passives" package="1X03" value="JUMPER-3PTH" x="12.7" y="29.845" rot="R90"/>
 </elements>
@@ -3161,7 +3161,8 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <contactref element="CAN" pad="7"/>
 <contactref element="CAN" pad="2"/>
 <wire x1="8.3566" y1="20.9804" x2="7.112" y2="19.7358" width="0.2" layer="1"/>
-<wire x1="8.3566" y1="23.8252" x2="8.3566" y2="20.9804" width="0.2" layer="1"/>
+<wire x1="8.3566" y1="23.8252" x2="8.3566" y2="23.6474" width="0.2" layer="1"/>
+<wire x1="8.3566" y1="23.6474" x2="8.3566" y2="20.9804" width="0.2" layer="1"/>
 <wire x1="9.0678" y1="24.5364" x2="8.3566" y2="23.8252" width="0.2" layer="1"/>
 <wire x1="9.0678" y1="25.4254" x2="9.0678" y2="24.5364" width="0.2" layer="1"/>
 <wire x1="9.4234" y1="25.781" x2="9.0678" y2="25.4254" width="0.2" layer="1"/>
@@ -3170,7 +3171,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <wire x1="9.4234" y1="25.9588" x2="9.525" y2="26.035" width="0.2" layer="1"/>
 <wire x1="36.2712" y1="15.6464" x2="39.8272" y2="15.6464" width="0.2" layer="1"/>
 <wire x1="36.2712" y1="16.3576" x2="36.2712" y2="15.6464" width="0.2" layer="1"/>
-<wire x1="39.8272" y1="15.6464" x2="40.5892" y2="18.33371875" width="0.2" layer="1"/>
+<wire x1="39.8272" y1="15.6464" x2="39.878" y2="15.621" width="0.2" layer="1"/>
 <wire x1="36.2712" y1="16.3576" x2="36.195" y2="16.4465" width="0.2" layer="1"/>
 <wire x1="30.9372" y1="28.6258" x2="30.9372" y2="28.575" width="0.2" layer="1"/>
 <wire x1="32.5374" y1="28.448" x2="30.9372" y2="28.448" width="0.2" layer="1"/>
@@ -3178,8 +3179,8 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <wire x1="36.0934" y1="25.4254" x2="35.56" y2="25.4254" width="0.2" layer="16"/>
 <wire x1="30.9372" y1="28.448" x2="30.9372" y2="28.575" width="0.2" layer="1"/>
 <wire x1="36.0934" y1="25.4254" x2="36.195" y2="25.4" width="0.2" layer="16"/>
-<wire x1="36.2712" y1="25.2476" x2="39.4716" y2="25.2476" width="0.2" layer="16"/>
-<wire x1="39.4716" y1="25.2476" x2="39.6494" y2="25.2476" width="0.2" layer="16"/>
+<wire x1="39.6494" y1="25.2476" x2="40.0685" y2="24.8285" width="0.2" layer="16"/>
+<wire x1="36.2712" y1="25.2476" x2="39.6494" y2="25.2476" width="0.2" layer="16"/>
 <wire x1="36.2712" y1="25.2476" x2="36.195" y2="25.4" width="0.2" layer="16"/>
 <wire x1="34.3154" y1="18.3134" x2="36.0934" y2="16.5354" width="0.2" layer="1"/>
 <wire x1="34.3154" y1="22.225" x2="34.3154" y2="18.3134" width="0.2" layer="1"/>
@@ -3190,6 +3191,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <wire x1="36.2712" y1="34.3154" x2="40.3606" y2="34.3154" width="0.2" layer="1"/>
 <wire x1="40.3606" y1="34.3154" x2="40.386" y2="34.3535" width="0.2" layer="1"/>
 <wire x1="36.2712" y1="34.3154" x2="36.195" y2="34.417" width="0.2" layer="1"/>
+<wire x1="36.2712" y1="44.45" x2="40.132" y2="44.45" width="0.2" layer="1"/>
 <wire x1="36.2712" y1="43.9166" x2="36.2712" y2="44.45" width="0.2" layer="1"/>
 <wire x1="36.2712" y1="43.9166" x2="36.195" y2="43.815" width="0.2" layer="1"/>
 <wire x1="25.4254" y1="50.8508" x2="24.1808" y2="49.6062" width="0.2" layer="16"/>
@@ -3212,8 +3214,19 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <wire x1="36.0934" y1="25.4254" x2="36.195" y2="25.4" width="0.2" layer="1"/>
 <wire x1="36.0934" y1="34.3154" x2="36.195" y2="34.417" width="0.2" layer="1"/>
 <via x="32.5374" y="28.448" extent="1-16" drill="0.3"/>
+<wire x1="9.392921875" y1="38.902640625" x2="10.8458" y2="40.894" width="0.2" layer="16"/>
+<wire x1="6.370321875" y1="38.902640625" x2="9.392921875" y2="38.902640625" width="0.2" layer="16"/>
+<wire x1="10.8458" y1="40.894" x2="10.9855" y2="40.9575" width="0.2" layer="16"/>
+<wire x1="6.370321875" y1="38.902640625" x2="6.35" y2="38.679121875" width="0.2" layer="16"/>
+<wire x1="12.2682" y1="45.8724" x2="15.113" y2="45.8724" width="0.2" layer="1"/>
+<wire x1="12.2682" y1="47.8282" x2="12.2682" y2="45.8724" width="0.2" layer="1"/>
+<wire x1="11.2014" y1="48.895" x2="11.557" y2="48.5394" width="0.2" layer="1"/>
+<wire x1="11.557" y1="48.5394" x2="12.2682" y2="47.8282" width="0.2" layer="1"/>
+<wire x1="15.113" y1="45.8724" x2="15.1638" y2="45.72" width="0.2" layer="1"/>
+<wire x1="11.2014" y1="48.895" x2="11.1125" y2="49.022" width="0.2" layer="1"/>
+<wire x1="10.1346" y1="47.117" x2="6.4008" y2="47.117" width="0.2" layer="1"/>
+<wire x1="11.557" y1="48.5394" x2="10.1346" y2="47.117" width="0.2" layer="1"/>
 <wire x1="6.4008" y1="47.117" x2="6.32968125" y2="46.9519" width="0.2" layer="1"/>
-<<<<<<< HEAD
 <wire x1="11.557" y1="48.5394" x2="11.1125" y2="49.022" width="0.2" layer="1"/>
 <wire x1="12.2682" y1="42.3164" x2="11.0236" y2="41.0718" width="0.2" layer="1"/>
 <wire x1="12.2682" y1="45.8724" x2="12.2682" y2="42.3164" width="0.2" layer="1"/>
@@ -3228,48 +3241,6 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <wire x1="24.003" y1="50.31210625" x2="23.46430625" y2="50.8508" width="0.2" layer="1"/>
 <wire x1="23.46430625" y1="50.8508" x2="15.2908" y2="50.8508" width="0.2" layer="1"/>
 <wire x1="24.003" y1="49.6062" x2="24.13" y2="49.53" width="0.2" layer="1"/>
-=======
-<wire x1="40.005" y1="25.6032" x2="40.5384" y2="26.1366" width="0.2" layer="16"/>
-<wire x1="39.8272" y1="25.6032" x2="40.005" y2="25.6032" width="0.2" layer="16"/>
-<wire x1="39.4716" y1="25.2476" x2="39.8272" y2="25.6032" width="0.2" layer="16"/>
-<wire x1="40.5384" y1="26.1366" x2="40.566340625" y2="26.261059375" width="0.2" layer="16"/>
-<wire x1="40.1828" y1="43.7388" x2="36.2712" y2="43.7388" width="0.2" layer="1"/>
-<wire x1="40.1828" y1="42.4942" x2="40.1828" y2="43.7388" width="0.2" layer="1"/>
-<wire x1="36.2712" y1="43.7388" x2="36.195" y2="43.815" width="0.2" layer="1"/>
-<wire x1="40.1828" y1="42.4942" x2="40.345359375" y2="42.44848125" width="0.2" layer="1"/>
-<wire x1="7.112" y1="47.8282" x2="6.4008" y2="47.117" width="0.2" layer="16"/>
-<wire x1="11.0236" y1="47.8282" x2="9.0678" y2="47.8282" width="0.2" layer="16"/>
-<wire x1="9.0678" y1="47.8282" x2="7.112" y2="47.8282" width="0.2" layer="16"/>
-<wire x1="6.4008" y1="47.117" x2="6.32968125" y2="46.9519" width="0.2" layer="16"/>
-<wire x1="11.0236" y1="47.8282" x2="11.031221875" y2="47.9044" width="0.2" layer="16"/>
-<wire x1="16.7132" y1="45.8724" x2="15.2908" y2="45.8724" width="0.2" layer="1"/>
-<wire x1="16.7132" y1="46.4058" x2="16.7132" y2="45.8724" width="0.2" layer="1"/>
-<wire x1="15.2908" y1="47.8282" x2="16.7132" y2="46.4058" width="0.2" layer="16"/>
-<wire x1="11.2014" y1="47.8282" x2="15.2908" y2="47.8282" width="0.2" layer="16"/>
-<wire x1="15.2908" y1="45.8724" x2="15.1638" y2="45.72" width="0.2" layer="1"/>
-<wire x1="11.2014" y1="47.8282" x2="11.031221875" y2="47.9044" width="0.2" layer="16"/>
-<wire x1="6.7564" y1="38.227" x2="6.4008" y2="38.5826" width="0.2" layer="16"/>
-<wire x1="10.4902" y1="38.227" x2="9.0678" y2="38.227" width="0.2" layer="16"/>
-<wire x1="9.0678" y1="38.227" x2="6.7564" y2="38.227" width="0.2" layer="16"/>
-<wire x1="6.4008" y1="38.5826" x2="6.35" y2="38.679121875" width="0.2" layer="16"/>
-<wire x1="10.4902" y1="38.227" x2="10.523221875" y2="38.199059375" width="0.2" layer="16"/>
-<wire x1="9.0678" y1="38.227" x2="9.0678" y2="43.0276" width="0.2" layer="16"/>
-<wire x1="9.0678" y1="43.0276" x2="9.0678" y2="47.8282" width="0.2" layer="16"/>
-<wire x1="6.9342" y1="30.5816" x2="8.879840625" y2="30.5816" width="0.2" layer="16"/>
-<wire x1="8.879840625" y1="30.5816" x2="9.4234" y2="30.038040625" width="0.2" layer="16" curve="-90"/>
-<wire x1="9.4234" y1="30.038040625" x2="9.4234" y2="26.1366" width="0.2" layer="16"/>
-<wire x1="3.9116" y1="42.40750625" x2="3.9116" y2="33.97459375" width="0.2" layer="16"/>
-<wire x1="3.9116" y1="33.97459375" x2="4.17350625" y2="33.34229375" width="0.2" layer="16" curve="45"/>
-<wire x1="4.17350625" y1="33.34229375" x2="6.9342" y2="30.5816" width="0.2" layer="16"/>
-<wire x1="9.0678" y1="43.0276" x2="4.53169375" y2="43.0276" width="0.2" layer="16"/>
-<wire x1="4.53169375" y1="43.0276" x2="3.9116" y2="42.40750625" width="0.2" layer="16" curve="90"/>
-<wire x1="9.4234" y1="26.1366" x2="9.525" y2="26.035" width="0.2" layer="16"/>
-<wire x1="18.669" y1="48.3616" x2="16.7132" y2="46.4058" width="0.2" layer="16"/>
-<wire x1="22.9362" y1="48.3616" x2="18.669" y2="48.3616" width="0.2" layer="16"/>
-<wire x1="24.003" y1="49.4284" x2="22.9362" y2="48.3616" width="0.2" layer="16"/>
-<wire x1="24.003" y1="49.4284" x2="24.13" y2="49.53" width="0.2" layer="16"/>
-<via x="16.7132" y="46.4058" extent="1-16" drill="0.3"/>
->>>>>>> ef05df613c211f3eb57c01ccb6a44ffc352b858a
 </signal>
 <signal name="GND">
 <contactref element="U1" pad="3"/>
@@ -3304,10 +3275,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <contactref element="C7" pad="2"/>
 <contactref element="CAN" pad="1"/>
 <contactref element="CAN" pad="8"/>
-<<<<<<< HEAD
 <via x="13.49248125" y="42.204640625" extent="1-16" drill="0.3"/>
-=======
->>>>>>> ef05df613c211f3eb57c01ccb6a44ffc352b858a
 </signal>
 <signal name="CAN_TXD">
 <contactref element="U1" pad="1"/>
@@ -3376,12 +3344,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <wire x1="20.2692" y1="46.9392" x2="19.3802" y2="46.9392" width="0.2" layer="1"/>
 <wire x1="7.112" y1="31.4706" x2="6.985" y2="31.38" width="0.2" layer="1"/>
 <wire x1="20.2692" y1="46.9392" x2="20.3962" y2="46.99" width="0.2" layer="1"/>
-<wire x1="10.3124" y1="35.9156" x2="10.4902" y2="35.9156" width="0.2" layer="1"/>
-<wire x1="14.5796" y1="40.1828" x2="10.3124" y2="35.9156" width="0.2" layer="16"/>
-<wire x1="14.7574" y1="40.1828" x2="14.5796" y2="40.1828" width="0.2" layer="16"/>
-<wire x1="17.0688" y1="42.4942" x2="14.7574" y2="40.1828" width="0.2" layer="1"/>
-<via x="10.3124" y="35.9156" extent="1-16" drill="0.3"/>
-<via x="14.7574" y="40.1828" extent="1-16" drill="0.3"/>
+<wire x1="17.0688" y1="42.4942" x2="10.4902" y2="35.9156" width="0.2" layer="1"/>
 </signal>
 <signal name="CANH">
 <contactref element="U1" pad="7"/>
@@ -3475,7 +3438,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <contactref element="16MHZ" pad="2"/>
 <contactref element="CONTROLLER" pad="7"/>
 <wire x1="25.4254" y1="44.9834" x2="28.448" y2="44.9834" width="0.2" layer="1"/>
-<wire x1="28.448" y1="44.9834" x2="28.646115625" y2="44.933440625" width="0.2" layer="1"/>
+<wire x1="28.448" y1="44.9834" x2="28.575" y2="44.82" width="0.2" layer="1"/>
 <wire x1="25.4254" y1="44.9834" x2="25.4" y2="44.958" width="0.2" layer="1"/>
 <wire x1="23.4696" y1="42.672" x2="23.4696" y2="21.717984375" width="0.2" layer="1"/>
 <wire x1="23.4696" y1="21.717984375" x2="22.732015625" y2="20.9804" width="0.2" layer="1" curve="-90"/>
@@ -3520,38 +3483,38 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <signal name="A5">
 <contactref element="ARDUINO" pad="A5"/>
 <contactref element="A5" pad="1"/>
-<wire x1="6.223" y1="39.8272" x2="6.223" y2="41.783" width="0.2" layer="16"/>
-<wire x1="5.1562" y1="39.8272" x2="6.223" y2="39.8272" width="0.2" layer="16"/>
-<wire x1="4.445" y1="39.116" x2="5.1562" y2="39.8272" width="0.2" layer="16"/>
-<wire x1="4.445" y1="37.338" x2="4.445" y2="39.116" width="0.2" layer="16"/>
-<wire x1="8.001" y1="37.338" x2="4.445" y2="37.338" width="0.2" layer="16"/>
-<wire x1="10.1346" y1="35.2044" x2="8.001" y2="37.338" width="0.2" layer="16"/>
-<wire x1="11.2014" y1="35.2044" x2="10.1346" y2="35.2044" width="0.2" layer="16"/>
-<wire x1="14.224" y1="38.227" x2="11.2014" y2="35.2044" width="0.2" layer="16"/>
-<wire x1="17.9578" y1="38.227" x2="14.224" y2="38.227" width="0.2" layer="16"/>
-<wire x1="6.223" y1="41.783" x2="6.32968125" y2="41.8719" width="0.2" layer="16"/>
-<wire x1="17.9578" y1="38.227" x2="18.0975" y2="38.25875" width="0.2" layer="16"/>
+<wire x1="9.779" y1="41.783" x2="6.4008" y2="41.783" width="0.2" layer="1"/>
+<wire x1="9.779" y1="40.005" x2="9.779" y2="41.783" width="0.2" layer="1"/>
+<wire x1="10.1346" y1="39.6494" x2="9.779" y2="40.005" width="0.2" layer="1"/>
+<wire x1="13.5128" y1="39.6494" x2="10.1346" y2="39.6494" width="0.2" layer="1"/>
+<wire x1="13.5128" y1="39.8272" x2="13.5128" y2="39.6494" width="0.2" layer="1"/>
+<wire x1="14.7574" y1="41.0718" x2="13.5128" y2="39.8272" width="0.2" layer="1"/>
+<wire x1="17.0688" y1="38.7604" x2="14.7574" y2="41.0718" width="0.2" layer="16"/>
+<wire x1="17.6022" y1="38.7604" x2="17.0688" y2="38.7604" width="0.2" layer="16"/>
+<wire x1="17.9578" y1="38.4048" x2="17.6022" y2="38.7604" width="0.2" layer="16"/>
+<wire x1="6.4008" y1="41.783" x2="6.32968125" y2="41.8719" width="0.2" layer="1"/>
+<wire x1="17.9578" y1="38.4048" x2="18.0975" y2="38.25875" width="0.2" layer="16"/>
+<via x="14.7574" y="41.0718" extent="1-16" drill="0.3"/>
 </signal>
 <signal name="A0">
 <contactref element="ARDUINO" pad="17"/>
 <contactref element="A0" pad="1"/>
-<wire x1="32.3596" y1="23.114" x2="40.3606" y2="23.114" width="0.2" layer="16"/>
+<wire x1="37.5158" y1="23.114" x2="39.8272" y2="20.8026" width="0.2" layer="16"/>
+<wire x1="32.3596" y1="23.114" x2="37.5158" y2="23.114" width="0.2" layer="16"/>
 <wire x1="25.4254" y1="30.0482" x2="32.3596" y2="23.114" width="0.2" layer="16"/>
 <wire x1="16.891" y1="30.0482" x2="25.4254" y2="30.0482" width="0.2" layer="16"/>
 <wire x1="16.002" y1="29.1592" x2="16.891" y2="30.0482" width="0.2" layer="16"/>
 <wire x1="15.2908" y1="29.1592" x2="16.002" y2="29.1592" width="0.2" layer="16"/>
+<wire x1="39.8272" y1="20.8026" x2="39.878" y2="20.701" width="0.2" layer="16"/>
 <wire x1="15.2908" y1="29.1592" x2="15.24" y2="29.21" width="0.2" layer="16"/>
-<wire x1="40.3606" y1="23.114" x2="40.5384" y2="23.2918" width="0.2" layer="16"/>
-<wire x1="40.5384" y1="23.2918" x2="40.5892" y2="23.41371875" width="0.2" layer="16"/>
 </signal>
 <signal name="A1">
 <contactref element="ARDUINO" pad="18"/>
 <contactref element="A1" pad="1"/>
+<wire x1="38.227" y1="31.8262" x2="40.005" y2="30.0482" width="0.2" layer="16"/>
 <wire x1="15.2908" y1="31.8262" x2="38.227" y2="31.8262" width="0.2" layer="16"/>
+<wire x1="40.005" y1="30.0482" x2="40.0685" y2="29.9085" width="0.2" layer="16"/>
 <wire x1="15.2908" y1="31.8262" x2="15.24" y2="31.75" width="0.2" layer="16"/>
-<wire x1="38.5826" y1="31.4706" x2="40.5384" y2="31.4706" width="0.2" layer="16"/>
-<wire x1="38.227" y1="31.8262" x2="38.5826" y2="31.4706" width="0.2" layer="16"/>
-<wire x1="40.5384" y1="31.4706" x2="40.566340625" y2="31.341059375" width="0.2" layer="16"/>
 </signal>
 <signal name="A2">
 <contactref element="ARDUINO" pad="19"/>
@@ -3568,23 +3531,18 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <signal name="A3">
 <contactref element="ARDUINO" pad="20"/>
 <contactref element="A3" pad="1"/>
-<<<<<<< HEAD
 <wire x1="31.2928" y1="48.006" x2="31.2928" y2="49.098684375" width="0.2" layer="1"/>
 <wire x1="31.2928" y1="49.098684375" x2="31.800315625" y2="49.6062" width="0.2" layer="1"/>
 <wire x1="31.800315625" y1="49.6062" x2="40.005" y2="49.6062" width="0.2" layer="1"/>
-=======
->>>>>>> ef05df613c211f3eb57c01ccb6a44ffc352b858a
 <wire x1="25.4254" y1="42.1386" x2="31.2928" y2="48.006" width="0.2" layer="16"/>
 <wire x1="24.1808" y1="42.1386" x2="25.4254" y2="42.1386" width="0.2" layer="16"/>
 <wire x1="19.0246" y1="36.9824" x2="24.1808" y2="42.1386" width="0.2" layer="16"/>
 <wire x1="16.7132" y1="36.9824" x2="19.0246" y2="36.9824" width="0.2" layer="16"/>
 <wire x1="16.5354" y1="36.8046" x2="16.7132" y2="36.9824" width="0.2" layer="16"/>
 <wire x1="15.2908" y1="36.8046" x2="16.5354" y2="36.8046" width="0.2" layer="16"/>
+<wire x1="40.005" y1="49.6062" x2="40.132" y2="49.53" width="0.2" layer="1"/>
 <wire x1="15.2908" y1="36.8046" x2="15.24" y2="36.83" width="0.2" layer="16"/>
 <via x="31.2928" y="48.006" extent="1-16" drill="0.3"/>
-<wire x1="31.2928" y1="47.6504" x2="40.1828" y2="47.6504" width="0.2" layer="1"/>
-<wire x1="31.2928" y1="48.006" x2="31.2928" y2="47.6504" width="0.2" layer="1"/>
-<wire x1="40.1828" y1="47.6504" x2="40.345359375" y2="47.52848125" width="0.2" layer="1"/>
 </signal>
 <signal name="N$4">
 <via x="43.6245" y="15.6845" extent="1-16" drill="2.1" diameter="2.1844"/>
