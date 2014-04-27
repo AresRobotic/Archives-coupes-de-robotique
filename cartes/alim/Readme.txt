@@ -5,3 +5,6 @@ Pas de plan de masse -> en faire 2 (1 pour le 5V isolé, 1 pour le reste) ; il f
 Les pistes de l'entrée des batteries sont plus petites que celles des alim à découpage, ça devient useless...
 
 Une seule résistance sur tous les micromatch aurait suffit, et pas besoin de faire des grosses pistes, c'est du signal, pas de la puissance
+
+On peut diminuer la taille de la carte par 2
+Le schematique n'est pas très compréhensible
