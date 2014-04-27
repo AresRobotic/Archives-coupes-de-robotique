@@ -8,3 +8,6 @@ Une seule résistance sur tous les micromatch aurait suffit, et pas besoin de fa
 
 On peut diminuer la taille de la carte par 2
 Le schematique n'est pas très compréhensible
+
+Le connecteur x10 pour le bouton déporté n'est pas au bon format (pas > 2.54mm). Dans une des deux positions ce connecteur court-circuite l'alim...
+Il faut je pense mettre le bouton et le connecteur en parallèlle avec une résistance de 1k pour ne pas courcircuiter si les boutons sont dans deux position inverse
