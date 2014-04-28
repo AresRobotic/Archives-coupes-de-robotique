@@ -14507,6 +14507,9 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/409317160AD421_c.pdf</de
 <part name="INPUT" library="jt-con-micromatch" deviceset="MMATCH-6-*" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
+<part name="IN" library="WEIDMULLER" deviceset="SL-3.5-2-90G" device=""/>
+<part name="P+4" library="supply1" deviceset="+12V" device=""/>
+<part name="GND5" library="supply1" deviceset="GNDA" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14568,6 +14571,9 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/409317160AD421_c.pdf</de
 <instance part="INPUT" gate="G$1" x="-149.86" y="-74.93"/>
 <instance part="P+3" gate="VCC" x="-161.29" y="-85.09" rot="R180"/>
 <instance part="GND2" gate="1" x="-139.7" y="-85.09"/>
+<instance part="IN" gate="G$1" x="-172.72" y="43.18"/>
+<instance part="P+4" gate="1" x="-160.02" y="50.8"/>
+<instance part="GND5" gate="1" x="-160.02" y="30.48"/>
 </instances>
 <busses>
 </busses>
@@ -14760,6 +14766,12 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/409317160AD421_c.pdf</de
 <wire x1="-66.675" y1="-27.305" x2="-64.135" y2="-27.305" width="0.1524" layer="91"/>
 <junction x="-64.135" y="-27.305"/>
 </segment>
+<segment>
+<pinref part="IN" gate="G$1" pin="1"/>
+<wire x1="-167.64" y1="40.64" x2="-160.02" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="GND5" gate="1" pin="GNDA"/>
+<wire x1="-160.02" y1="33.02" x2="-160.02" y2="40.64" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
@@ -14792,6 +14804,12 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/409317160AD421_c.pdf</de
 <wire x1="-167.64" y1="71.12" x2="-162.56" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="-162.56" y1="71.12" x2="-162.56" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="P+15" gate="1" pin="+12V"/>
+</segment>
+<segment>
+<pinref part="IN" gate="G$1" pin="2"/>
+<wire x1="-167.64" y1="45.72" x2="-160.02" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-160.02" y1="45.72" x2="-160.02" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="P+4" gate="1" pin="+12V"/>
 </segment>
 </net>
 <net name="TF1" class="0">

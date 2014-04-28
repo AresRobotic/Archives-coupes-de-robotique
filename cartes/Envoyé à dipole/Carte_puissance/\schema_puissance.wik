@@ -1,0 +1,30 @@
+{| class="wikitable" border="1"
+|+ /home/showok/Documents/Projets/Ares/Robot-2013-2014/cartes/Envoyé à dipole/Carte_puissance/schema_puissance.brd
+!Part!!Quantity!!Value!!Package
+|-
+|C1,C2,C3,C4||4||10nF||C0805
+|-
+|C5,C7,C9||3||100nF||C0805
+|-
+|C10||1||330nF||C0805
+|-
+|C11||1||2200u||TT5D11
+|-
+|HEADER||1||||FE06
+|-
+|IN,U$6,U$7||3||SL-3.5-2-90G||SL-3.5-2-90G
+|-
+|INPUT||1||MMATCH-6-||AMP-215079-6
+|-
+|LOGIC,PUISSANCE||2||||SML0805
+|-
+|R3,R4||2||1k||M0805
+|-
+|U$1,U$2||2||LMD18200||LMD18200
+|-
+|U$3||1||ADUM1400S||SO-16W
+|-
+|U$5||1||L7805TO263||DPAK
+|-
+|X2||1||GMSTBA2||GMSTBA2
+|}
