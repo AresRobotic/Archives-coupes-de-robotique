@@ -4123,9 +4123,11 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <wire x1="37.6" y1="66.6" x2="37.6" y2="70.4" width="0.2" layer="16"/>
 <wire x1="36.1" y1="65.1" x2="37.6" y2="66.6" width="0.2" layer="16"/>
 <wire x1="31.8" y1="65.1" x2="36.1" y2="65.1" width="0.2" layer="16"/>
-<wire x1="24.9" y1="58.2" x2="31.8" y2="65.1" width="0.2" layer="16"/>
-<wire x1="24.9" y1="55.9" x2="24.9" y2="58.2" width="0.2" layer="16"/>
-<wire x1="24.4" y1="55.4" x2="24.9" y2="55.9" width="0.2" layer="16"/>
+<wire x1="25.6" y1="59.8" x2="26.7" y2="60.9" width="0.2" layer="16"/>
+<wire x1="26.7" y1="60.9" x2="27.6" y2="60.9" width="0.2" layer="16"/>
+<wire x1="27.6" y1="60.9" x2="31.8" y2="65.1" width="0.2" layer="16"/>
+<wire x1="25.6" y1="56.5" x2="25.6" y2="59.8" width="0.2" layer="16"/>
+<wire x1="24.4" y1="55.4" x2="25.6" y2="56.5" width="0.2" layer="16"/>
 <wire x1="41.9" y1="78.1" x2="41.91" y2="78.105" width="0.2" layer="16"/>
 <wire x1="24.4" y1="55.4" x2="24.34" y2="55.4" width="0.2" layer="16"/>
 </signal>
