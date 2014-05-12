@@ -14187,16 +14187,16 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <wire x1="27.9146" y1="31.6484" x2="27.94" y2="31.75" width="0.2" layer="16"/>
 </signal>
 <signal name="N$1">
-<via x="9.6647" y="13.9192" extent="1-16" drill="2.8"/>
+<via x="9.652" y="48.768" extent="1-16" drill="2.1"/>
 </signal>
 <signal name="N$4">
-<via x="39.3446" y="13.7668" extent="1-16" drill="2.8"/>
+<via x="9.906" y="13.97" extent="1-16" drill="2.1"/>
 </signal>
 <signal name="N$6">
-<via x="39.5097" y="48.9966" extent="1-16" drill="2.8"/>
+<via x="39.37" y="13.97" extent="1-16" drill="2.1"/>
 </signal>
 <signal name="N$8">
-<via x="9.7409" y="48.9966" extent="1-16" drill="2.8"/>
+<via x="39.37" y="49.022" extent="1-16" drill="2.1"/>
 </signal>
 </signals>
 </board>

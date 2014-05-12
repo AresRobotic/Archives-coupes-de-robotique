@@ -14081,9 +14081,8 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <wire x1="35.7378" y1="24.003" x2="30.9372" y2="19.2024" width="0.2" layer="16"/>
 <wire x1="37.1602" y1="24.003" x2="35.7378" y2="24.003" width="0.2" layer="16"/>
 <wire x1="38.227" y1="25.0698" x2="37.1602" y2="24.003" width="0.2" layer="16"/>
-<wire x1="36.9824" y1="27.9146" x2="37.434190625" y2="27.9146" width="0.2" layer="16"/>
-<wire x1="37.434190625" y1="27.9146" x2="38.227" y2="27.121790625" width="0.2" layer="16"/>
-<wire x1="38.227" y1="27.121790625" x2="38.227" y2="25.0698" width="0.2" layer="16"/>
+<wire x1="38.227" y1="27.9146" x2="38.227" y2="25.0698" width="0.2" layer="16"/>
+<wire x1="36.9824" y1="27.9146" x2="38.227" y2="27.9146" width="0.2" layer="16"/>
 <wire x1="36.449" y1="28.448" x2="36.9824" y2="27.9146" width="0.2" layer="16"/>
 <wire x1="30.9372" y1="19.2024" x2="30.8246" y2="19.1262" width="0.2" layer="16"/>
 <wire x1="36.449" y1="28.448" x2="36.3474" y2="28.4988" width="0.2" layer="16"/>
@@ -14187,16 +14186,16 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <wire x1="27.9146" y1="31.6484" x2="27.94" y2="31.75" width="0.2" layer="16"/>
 </signal>
 <signal name="N$1">
-<via x="9.6647" y="13.9192" extent="1-16" drill="2.8"/>
+<via x="9.652" y="48.768" extent="1-16" drill="2.1"/>
 </signal>
 <signal name="N$4">
-<via x="39.3446" y="13.7668" extent="1-16" drill="2.8"/>
+<via x="9.906" y="13.97" extent="1-16" drill="2.1"/>
 </signal>
 <signal name="N$6">
-<via x="39.5097" y="48.9966" extent="1-16" drill="2.8"/>
+<via x="39.37" y="13.97" extent="1-16" drill="2.1"/>
 </signal>
 <signal name="N$8">
-<via x="9.7409" y="48.9966" extent="1-16" drill="2.8"/>
+<via x="39.37" y="49.022" extent="1-16" drill="2.1"/>
 </signal>
 </signals>
 </board>

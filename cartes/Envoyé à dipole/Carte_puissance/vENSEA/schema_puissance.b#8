@@ -84,12 +84,12 @@
 <text x="71.47808125" y="47.048240625" size="2.1844" layer="1" ratio="28" distance="58">Mot2</text>
 <text x="17.968959375" y="44.4632" size="2.1844" layer="16" ratio="28" distance="58" rot="MR0">Mot1</text>
 <text x="77.224640625" y="49.405359375" size="2.1844" layer="16" ratio="28" distance="58" rot="MR0">Mot2</text>
-<text x="53.206240625" y="8.482321875" size="0.8128" layer="25" ratio="28" distance="58"> dir1 pwm1 dir2 pwm2 GND  Vcc</text>
+<text x="51.621278125" y="7.252959375" size="0.8128" layer="1" ratio="28" distance="58"> dir1 pwm1 dir2 pwm2 GND  Vcc</text>
 <text x="29.649759375" y="10.0064" size="1.27" layer="1" ratio="28" distance="58">      GND PWM1 PWM2 
 Vcc DIR1 DIR2  </text>
 <text x="35.714321875" y="52.3668" size="2.54" layer="1" ratio="28" distance="58" rot="R270">GND</text>
 <text x="51.981840625" y="52.37751875" size="2.54" layer="1" ratio="28" distance="58" rot="R270">+12-30V</text>
-<text x="79.7" y="21.1" size="1.778" layer="25" ratio="9" rot="R180">Carte PUISSANCE</text>
+<text x="68.869440625" y="20.673278125" size="1.778" layer="1" ratio="9" rot="R180">Carte PUISSANCE</text>
 <rectangle x1="48.925478125" y1="15.783565625" x2="48.955953125" y2="15.793721875" layer="200"/>
 <rectangle x1="48.976278125" y1="15.783565625" x2="48.996596875" y2="15.793721875" layer="200"/>
 <rectangle x1="49.016915625" y1="15.783565625" x2="49.037234375" y2="15.793721875" layer="200"/>
@@ -4643,7 +4643,7 @@ Vcc DIR1 DIR2  </text>
 <rectangle x1="31.917640625" y1="20.27428125" x2="32.080196875" y2="20.2844375" layer="200"/>
 <rectangle x1="31.937959375" y1="20.284440625" x2="32.059878125" y2="20.294603125" layer="200"/>
 <rectangle x1="31.95828125" y1="20.294603125" x2="32.03955625" y2="20.304759375" layer="200"/>
-<text x="66.2432" y="16.1036" size="2.1844" layer="25" font="vector">2014</text>
+<text x="56.276240625" y="15.422878125" size="2.1844" layer="1" font="vector">2014</text>
 <text x="13.167359375" y="43.728640625" size="1.778" layer="1">out</text>
 <text x="73.28408125" y="44.846240625" size="1.778" layer="1">out</text>
 <text x="77.205840625" y="47.37608125" size="1.778" layer="16" rot="MR0">out</text>
