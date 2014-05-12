@@ -8240,6 +8240,11 @@ Réalisée par Cédric PILLET</text>
 <wire x1="182.88" y1="30.48" x2="182.88" y2="27.94" width="0.1524" layer="91"/>
 <label x="182.88" y="27.94" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="180.34" y1="10.16" x2="180.34" y2="7.62" width="0.1524" layer="91"/>
+<label x="180.34" y="7.62" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="UART_RX" class="0">
 <segment>
@@ -8292,11 +8297,6 @@ Réalisée par Cédric PILLET</text>
 <pinref part="ODO_D" gate="1" pin="3"/>
 <wire x1="198.12" y1="12.7" x2="193.04" y2="12.7" width="0.1524" layer="91"/>
 <label x="187.96" y="12.7" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="180.34" y1="10.16" x2="180.34" y2="7.62" width="0.1524" layer="91"/>
-<label x="180.34" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADC_3" class="0">
