@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : C:/Users/Tristan/Documents/eagle/alimentation/shematic.brd
+Job           : /home/showok/Documents/Projets/Ares/Robot-2013-2014/cartes/En dev/alim/version_12_mai_a_verifier/shematic.brd
 
-Start at      : 00:21:21 (25/04/2014)
-End at        : 00:21:26 (25/04/2014)
-Elapsed time  : 00:00:05
+Start at      : 02:21:08 (13/05/14)
+End at        : 02:21:14 (13/05/14)
+Elapsed time  : 00:00:06
 
-Signals       :    39   RoutingGrid: 19.685 mil  Layers: 2
-Connections   :   129   predefined:  0 ( 0 Vias )
+Signals       :    42   RoutingGrid: 19.685 mil  Layers: 2
+Connections   :   178   predefined:  122 ( 15 Vias )
 
-Router memory :   152256
+Router memory :   190872
 
-Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
+Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:01  00:00:01  00:00:01  00:00:01  00:00:01  00:00:00
-Number of Ripups  :         0         0         0         0         0         0
-max. Level        :         0         1         0         0         0         0
-max. Total        :         0         0         0         0         0         0
+Time per pass     :  00:00:01  00:00:01  00:00:01  00:00:02  00:00:01
+Number of Ripups  :         0         0         0         0         0
+max. Level        :         1         0         0         0         0
+max. Total        :         0         0         0         0         0
 
-Routed            :         6        34        34        34        34        34
-Vias              :         0        37         5         3         3         3
-Resolution        :     4.7 %    26.4 %    26.4 %    26.4 %    26.4 %    26.4 %
+Routed            :         3        16        16        16        16
+Vias              :         4         1         1         1         1
+Resolution        :    70.2 %    77.5 %    77.5 %    77.5 %    77.5 %
 
-Final             : 26.4% finished
+Final             : 97.7% finished
