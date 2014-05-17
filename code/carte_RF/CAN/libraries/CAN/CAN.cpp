@@ -2,6 +2,8 @@
 #include <SoftwareSerial.h>
 #include "CAN.h"
 
+
+
 void CANClass::begin()//constructor for initializing can module.
 {
 	// set the slaveSelectPin as an output 

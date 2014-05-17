@@ -15,7 +15,7 @@
 #include <SoftwareSerial.h>
 #include <SPI.h>
 
-#define BUS_SPEED 125
+#define BUS_SPEED  125
 
 //global variable used to determine whether loop should
 //be in Tx or Rx mode.
@@ -113,8 +113,7 @@ void loop() {
   
       frame_id = 0x1230000;
       length = 8;
-      
-      
+         
 
   
       CAN.load_ff_0(length,&frame_id,frame_data, true);
