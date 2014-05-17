@@ -13648,6 +13648,10 @@ at 31/07/2012 09:37:13</description>
 <part name="COMMAND" library="jt-con-micromatch" deviceset="MMATCH-6-*" device=""/>
 <part name="+5V" library="supply1" deviceset="VCC" device="" value="+5v"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="R0805" value="2,7k"/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="2,7k"/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="2,7k"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="2,7k"/>
 </parts>
 <sheets>
 <sheet>
@@ -13714,6 +13718,10 @@ Réalisée par Cédric PILLET</text>
 <instance part="COMMAND" gate="G$1" x="330.2" y="87.63"/>
 <instance part="+5V" gate="VCC" x="318.77" y="77.47" rot="R180"/>
 <instance part="GND2" gate="1" x="340.36" y="77.47"/>
+<instance part="R3" gate="G$1" x="147.32" y="43.18" rot="R90"/>
+<instance part="R4" gate="G$1" x="152.4" y="43.18" rot="R90"/>
+<instance part="R6" gate="G$1" x="144.78" y="22.86" rot="R90"/>
+<instance part="R7" gate="G$1" x="149.86" y="22.86" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -13854,6 +13862,22 @@ Réalisée par Cédric PILLET</text>
 <wire x1="325.12" y1="85.09" x2="318.77" y2="85.09" width="0.1524" layer="91"/>
 <wire x1="318.77" y1="85.09" x2="318.77" y2="80.01" width="0.1524" layer="91"/>
 <pinref part="+5V" gate="VCC" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="147.32" y1="48.26" x2="147.32" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="152.4" y1="48.26" x2="152.4" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="50.8" x2="152.4" y2="50.8" width="0.1524" layer="91"/>
+<label x="149.86" y="50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="144.78" y1="27.94" x2="144.78" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="149.86" y1="27.94" x2="149.86" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="30.48" x2="149.86" y2="30.48" width="0.1524" layer="91"/>
+<label x="147.32" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CANL" class="0">
@@ -14070,6 +14094,11 @@ Réalisée par Cédric PILLET</text>
 <wire x1="274.32" y1="139.7" x2="279.4" y2="139.7" width="0.1524" layer="91"/>
 <label x="279.4" y="139.7" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="147.32" y1="38.1" x2="147.32" y2="35.56" width="0.1524" layer="91"/>
+<label x="139.7" y="35.56" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CHB_G" class="0">
 <segment>
@@ -14081,6 +14110,11 @@ Réalisée par Cédric PILLET</text>
 <pinref part="MBED" gate="KIT" pin="P26"/>
 <wire x1="274.32" y1="142.24" x2="279.4" y2="142.24" width="0.1524" layer="91"/>
 <label x="279.4" y="142.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="152.4" y1="38.1" x2="152.4" y2="35.56" width="0.1524" layer="91"/>
+<label x="152.4" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CHA_D" class="0">
@@ -14094,6 +14128,11 @@ Réalisée par Cédric PILLET</text>
 <wire x1="177.8" y1="142.24" x2="170.18" y2="142.24" width="0.1524" layer="91"/>
 <label x="165.1" y="142.24" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="17.78" x2="144.78" y2="15.24" width="0.1524" layer="91"/>
+<label x="137.16" y="15.24" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CHB_D" class="0">
 <segment>
@@ -14105,6 +14144,11 @@ Réalisée par Cédric PILLET</text>
 <pinref part="MBED" gate="KIT" pin="P16"/>
 <wire x1="177.8" y1="139.7" x2="170.18" y2="139.7" width="0.1524" layer="91"/>
 <label x="165.1" y="139.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="17.78" x2="149.86" y2="15.24" width="0.1524" layer="91"/>
+<label x="149.86" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DATA_SHARP_1" class="0">
