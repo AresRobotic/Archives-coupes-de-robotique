@@ -13610,6 +13610,105 @@ at 31/07/2012 09:37:13</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Electromechanical">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find anything that moves- switches, relays, buttons, potentiometers. Also, anything that goes on a board but isn't electrical in nature- screws, standoffs, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="1X03">
+<wire x1="3.81" y1="0.635" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-0.635" x2="5.715" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="0.635" x2="6.35" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SMALL_SERVO_MOTOR">
+<wire x1="-12.7" y1="3.81" x2="-10.16" y2="3.81" width="0.254" layer="94" curve="-180"/>
+<wire x1="-10.16" y1="-8.89" x2="-12.7" y2="-8.89" width="0.254" layer="94" curve="-180"/>
+<wire x1="-7.62" y1="-1.27" x2="-7.62" y2="-3.81" width="0.254" layer="94" curve="-180"/>
+<wire x1="-15.24" y1="-3.81" x2="-15.24" y2="-1.27" width="0.254" layer="94" curve="-180"/>
+<wire x1="-15.24" y1="-1.27" x2="-12.7" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-1.27" x2="-12.7" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="1.27" x2="-12.7" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="3.81" x2="-10.16" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="1.27" x2="-10.16" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-1.27" x2="-7.62" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-3.81" x2="-10.16" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-3.81" x2="-10.16" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-6.35" x2="-10.16" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-3.81" x2="-12.7" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-3.81" x2="-12.7" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-6.35" x2="-12.7" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="1.27" x2="-16.764" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-16.764" y1="1.27" x2="-17.78" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="1.27" x2="-17.78" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-6.35" x2="-16.764" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="-16.764" y1="-6.35" x2="-12.7" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-6.35" x2="-1.016" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-6.35" x2="0" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="0" y1="-6.35" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.016" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.27" x2="-10.16" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.27" x2="-1.016" y2="-6.35" width="0.1524" layer="94"/>
+<wire x1="-16.764" y1="1.27" x2="-16.764" y2="-6.35" width="0.1524" layer="94"/>
+<pin name="SIG" x="2.54" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="V+" x="2.54" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="2.54" y="-5.08" visible="pin" length="short" rot="R180"/>
+<text x="0.508" y="0.254" size="1.27" layer="94">W</text>
+<text x="0.508" y="-2.286" size="1.27" layer="94">R</text>
+<text x="0.508" y="-4.826" size="1.27" layer="94">B</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SMALL_SERVO" prefix="M">
+<description>&lt;b&gt;Small servo motor&lt;/b&gt;&lt;br&gt;
+This is the small servo used in the SIK.&lt;br&gt;
+SKU: ROB-09065</description>
+<gates>
+<gate name="G$1" symbol="SMALL_SERVO_MOTOR" x="7.62" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="1X03">
+<connects>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="SIG" pad="1"/>
+<connect gate="G$1" pin="V+" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -13652,6 +13751,8 @@ at 31/07/2012 09:37:13</description>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="2,7k"/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="2,7k"/>
 <part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="2,7k"/>
+<part name="M1" library="SparkFun-Electromechanical" deviceset="SMALL_SERVO" device=""/>
+<part name="M2" library="SparkFun-Electromechanical" deviceset="SMALL_SERVO" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13659,8 +13760,7 @@ at 31/07/2012 09:37:13</description>
 <frame x1="0" y1="0" x2="368.3" y2="193.04" columns="8" rows="5" layer="91"/>
 <frame x1="5.08" y1="114.3" x2="139.7" y2="187.96" columns="8" rows="5" layer="91" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
 <frame x1="5.08" y1="7.62" x2="124.46" y2="111.76" columns="8" rows="5" layer="91" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
-<frame x1="246.38" y1="7.62" x2="360.68" y2="50.8" columns="8" rows="5" layer="91" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
-<text x="261.62" y="22.86" size="5.08" layer="91">CARTE PLAN B
+<text x="271.78" y="10.16" size="5.08" layer="91">CARTE PLAN B
 ARES 2013-14
 Réalisée par Cédric PILLET</text>
 <text x="86.36" y="116.84" size="5.08" layer="91">Communication</text>
@@ -13670,7 +13770,6 @@ Réalisée par Cédric PILLET</text>
 <text x="264.16" y="119.38" size="5.08" layer="91">Commande</text>
 <frame x1="142.24" y1="114.3" x2="363.22" y2="187.96" columns="8" rows="5" layer="91" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
 <frame x1="127" y1="7.62" x2="243.84" y2="111.76" columns="8" rows="5" layer="91" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
-<frame x1="246.38" y1="53.34" x2="363.22" y2="111.76" columns="8" rows="5" layer="91" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
 </plain>
 <instances>
 <instance part="MBED" gate="KIT" x="226.06" y="154.94"/>
@@ -13715,13 +13814,15 @@ Réalisée par Cédric PILLET</text>
 <instance part="C2" gate="G$1" x="256.54" y="99.06"/>
 <instance part="JUMPER" gate="A" x="83.82" y="134.62" rot="MR0"/>
 <instance part="R2" gate="G$1" x="254" y="78.74" rot="R270"/>
-<instance part="COMMAND" gate="G$1" x="330.2" y="87.63"/>
-<instance part="+5V" gate="VCC" x="318.77" y="77.47" rot="R180"/>
-<instance part="GND2" gate="1" x="340.36" y="77.47"/>
+<instance part="COMMAND" gate="G$1" x="327.66" y="92.71"/>
+<instance part="+5V" gate="VCC" x="316.23" y="82.55" rot="R180"/>
+<instance part="GND2" gate="1" x="337.82" y="82.55"/>
 <instance part="R3" gate="G$1" x="147.32" y="43.18" rot="R90"/>
 <instance part="R4" gate="G$1" x="152.4" y="43.18" rot="R90"/>
 <instance part="R6" gate="G$1" x="144.78" y="22.86" rot="R90"/>
 <instance part="R7" gate="G$1" x="149.86" y="22.86" rot="R90"/>
+<instance part="M1" gate="G$1" x="327.66" y="66.04" rot="R180"/>
+<instance part="M2" gate="G$1" x="327.66" y="50.8" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -13792,9 +13893,17 @@ Réalisée par Cédric PILLET</text>
 </segment>
 <segment>
 <pinref part="COMMAND" gate="G$1" pin="4"/>
-<wire x1="335.28" y1="85.09" x2="340.36" y2="85.09" width="0.1524" layer="91"/>
-<wire x1="340.36" y1="85.09" x2="340.36" y2="80.01" width="0.1524" layer="91"/>
+<wire x1="332.74" y1="90.17" x2="337.82" y2="90.17" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="90.17" x2="337.82" y2="85.09" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="M1" gate="G$1" pin="GND"/>
+<wire x1="325.12" y1="71.12" x2="317.5" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="M2" gate="G$1" pin="GND"/>
+<wire x1="325.12" y1="55.88" x2="317.5" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -13859,8 +13968,8 @@ Réalisée par Cédric PILLET</text>
 </segment>
 <segment>
 <pinref part="COMMAND" gate="G$1" pin="3"/>
-<wire x1="325.12" y1="85.09" x2="318.77" y2="85.09" width="0.1524" layer="91"/>
-<wire x1="318.77" y1="85.09" x2="318.77" y2="80.01" width="0.1524" layer="91"/>
+<wire x1="322.58" y1="90.17" x2="316.23" y2="90.17" width="0.1524" layer="91"/>
+<wire x1="316.23" y1="90.17" x2="316.23" y2="85.09" width="0.1524" layer="91"/>
 <pinref part="+5V" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
@@ -13878,6 +13987,14 @@ Réalisée par Cédric PILLET</text>
 <wire x1="149.86" y1="27.94" x2="149.86" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="30.48" x2="149.86" y2="30.48" width="0.1524" layer="91"/>
 <label x="147.32" y="30.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="M1" gate="G$1" pin="V+"/>
+<wire x1="325.12" y1="68.58" x2="317.5" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="M2" gate="G$1" pin="V+"/>
+<wire x1="325.12" y1="53.34" x2="317.5" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CANL" class="0">
@@ -14043,8 +14160,8 @@ Réalisée par Cédric PILLET</text>
 </segment>
 <segment>
 <pinref part="COMMAND" gate="G$1" pin="8"/>
-<wire x1="335.28" y1="90.17" x2="340.36" y2="90.17" width="0.1524" layer="91"/>
-<label x="340.36" y="90.17" size="1.778" layer="95"/>
+<wire x1="332.74" y1="95.25" x2="337.82" y2="95.25" width="0.1524" layer="91"/>
+<label x="337.82" y="95.25" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DIR2" class="0">
@@ -14055,8 +14172,8 @@ Réalisée par Cédric PILLET</text>
 </segment>
 <segment>
 <pinref part="COMMAND" gate="G$1" pin="7"/>
-<wire x1="325.12" y1="90.17" x2="320.04" y2="90.17" width="0.1524" layer="91"/>
-<label x="320.04" y="90.17" size="1.778" layer="95" rot="R180"/>
+<wire x1="322.58" y1="95.25" x2="317.5" y2="95.25" width="0.1524" layer="91"/>
+<label x="317.5" y="95.25" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PWM_MOT1" class="0">
@@ -14067,8 +14184,8 @@ Réalisée par Cédric PILLET</text>
 </segment>
 <segment>
 <pinref part="COMMAND" gate="G$1" pin="6"/>
-<wire x1="335.28" y1="87.63" x2="340.36" y2="87.63" width="0.1524" layer="91"/>
-<label x="340.36" y="87.63" size="1.778" layer="95"/>
+<wire x1="332.74" y1="92.71" x2="337.82" y2="92.71" width="0.1524" layer="91"/>
+<label x="337.82" y="92.71" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DIR1" class="0">
@@ -14079,8 +14196,8 @@ Réalisée par Cédric PILLET</text>
 </segment>
 <segment>
 <pinref part="COMMAND" gate="G$1" pin="5"/>
-<wire x1="325.12" y1="87.63" x2="320.04" y2="87.63" width="0.1524" layer="91"/>
-<label x="320.04" y="87.63" size="1.778" layer="95" rot="R180"/>
+<wire x1="322.58" y1="92.71" x2="317.5" y2="92.71" width="0.1524" layer="91"/>
+<label x="317.5" y="92.71" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="CHA_G" class="0">
@@ -14246,6 +14363,44 @@ Réalisée par Cédric PILLET</text>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="254" y1="73.66" x2="254" y2="68.58" width="0.1524" layer="91"/>
 <label x="251.46" y="63.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PWM1" class="0">
+<segment>
+<pinref part="MBED" gate="KIT" pin="P11"/>
+<wire x1="177.8" y1="152.4" x2="170.18" y2="152.4" width="0.1524" layer="91"/>
+<label x="165.1" y="152.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="M1" gate="G$1" pin="SIG"/>
+<wire x1="325.12" y1="66.04" x2="317.5" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PWM2" class="0">
+<segment>
+<pinref part="MBED" gate="KIT" pin="P12"/>
+<wire x1="177.8" y1="149.86" x2="170.18" y2="149.86" width="0.1524" layer="91"/>
+<label x="165.1" y="149.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="M2" gate="G$1" pin="SIG"/>
+<wire x1="325.12" y1="50.8" x2="317.5" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<wire x1="246.38" y1="111.76" x2="363.22" y2="111.76" width="0.3048" layer="91"/>
+<wire x1="363.22" y1="111.76" x2="363.22" y2="43.18" width="0.3048" layer="91"/>
+<wire x1="363.22" y1="43.18" x2="246.38" y2="43.18" width="0.3048" layer="91"/>
+<wire x1="246.38" y1="43.18" x2="246.38" y2="111.76" width="0.3048" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<wire x1="246.38" y1="40.64" x2="363.22" y2="40.64" width="0.3048" layer="91"/>
+<wire x1="363.22" y1="40.64" x2="363.22" y2="5.08" width="0.3048" layer="91"/>
+<wire x1="363.22" y1="5.08" x2="246.38" y2="5.08" width="0.3048" layer="91"/>
+<wire x1="246.38" y1="5.08" x2="246.38" y2="40.64" width="0.3048" layer="91"/>
 </segment>
 </net>
 </nets>
