@@ -6,6 +6,9 @@
  */
 
 #include <p30F4012.h>
+#include <uart.h>
+#include <can.h>
+
 #define FCH PORTDbits.RD1
 #define FCB PORTDbits.RD0
 
