@@ -13900,6 +13900,7 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 </signal>
 <signal name="VCC">
 <contactref element="CAN_CONTROL" pad="18"/>
+<contactref element="TRANSCEIVER" pad="2"/>
 <contactref element="ARDUINO_MINI" pad="VCC"/>
 <contactref element="CAN" pad="7"/>
 <contactref element="CAN" pad="2"/>
@@ -13923,12 +13924,14 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <wire x1="19.7358" y1="17.78" x2="17.4244" y2="15.4686" width="0.2" layer="16"/>
 <wire x1="21.5138" y1="17.78" x2="19.7358" y2="17.78" width="0.2" layer="16"/>
 <wire x1="18.8468" y1="14.5796" x2="18.9484" y2="14.4526" width="0.2" layer="1"/>
+<wire x1="21.5138" y1="17.78" x2="21.5646" y2="17.8816" width="0.2" layer="16"/>
 <wire x1="28.6258" y1="22.0472" x2="32.3596" y2="25.781" width="0.2" layer="16"/>
 <wire x1="32.3596" y1="25.781" x2="33.8074" y2="27.2288" width="0.2" layer="16"/>
 <wire x1="25.0698" y1="22.0472" x2="28.6258" y2="22.0472" width="0.2" layer="16"/>
 <wire x1="24.003" y1="20.9804" x2="25.0698" y2="22.0472" width="0.2" layer="16"/>
 <wire x1="24.003" y1="17.78" x2="24.003" y2="20.9804" width="0.2" layer="16"/>
 <wire x1="21.6916" y1="17.78" x2="24.003" y2="17.78" width="0.2" layer="16"/>
+<wire x1="21.6916" y1="17.78" x2="21.5646" y2="17.8816" width="0.2" layer="16"/>
 <wire x1="36.2712" y1="32.7152" x2="36.2712" y2="33.4264" width="0.2" layer="16"/>
 <wire x1="36.0934" y1="32.7152" x2="36.2712" y2="32.7152" width="0.2" layer="16"/>
 <wire x1="34.671" y1="31.2928" x2="36.0934" y2="32.7152" width="0.2" layer="16"/>
@@ -13948,14 +13951,10 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <wire x1="31.8262" y1="29.337" x2="31.6484" y2="29.337" width="0.2" layer="16"/>
 <via x="17.4244" y="15.4686" extent="1-16" drill="0.3"/>
 <via x="25.6032" y="40.1828" extent="1-16" drill="0.3"/>
-<contactref element="TRANSCEIVER" pad="3"/>
-<wire x1="21.6916" y1="19.2024" x2="21.5646" y2="19.1516" width="0.2" layer="16"/>
-<wire x1="21.6916" y1="19.2024" x2="21.6916" y2="19.15158125" width="0.2" layer="16"/>
-<wire x1="21.5138" y1="17.78" x2="21.6916" y2="17.78" width="0" layer="19" extent="16-16"/>
-<wire x1="21.5646" y1="19.1516" x2="21.6916" y2="17.78" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="GND">
 <contactref element="CAN_CONTROL" pad="9"/>
+<contactref element="TRANSCEIVER" pad="3"/>
 <contactref element="R1" pad="2"/>
 <contactref element="C1" pad="1"/>
 <contactref element="C2" pad="1"/>
@@ -13979,20 +13978,10 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <contactref element="C5" pad="2"/>
 <contactref element="3.3V" pad="2"/>
 <wire x1="19.3802" y1="45.5168" x2="19.35819375" y2="45.4406" width="0.2" layer="16"/>
+<wire x1="21.6916" y1="19.2024" x2="21.5646" y2="19.1516" width="0.2" layer="16"/>
+<wire x1="21.6916" y1="19.2024" x2="21.6916" y2="19.15158125" width="0.2" layer="16"/>
 <via x="14.7955" y="18.3388" extent="1-16" drill="0.5"/>
-<contactref element="TRANSCEIVER" pad="2"/>
-<wire x1="31.0388" y1="42.2766" x2="31.0134" y2="44.1596" width="0" layer="19" extent="1-1"/>
-<wire x1="24.13" y1="46.99" x2="31.0134" y2="44.1596" width="0" layer="19" extent="1-1"/>
-<wire x1="19.3802" y1="45.5168" x2="24.13" y2="46.99" width="0" layer="19" extent="16-16"/>
-<wire x1="20.4106" y1="43.307" x2="19.35819375" y2="45.4406" width="0" layer="19" extent="1-16"/>
-<wire x1="23.368" y1="38.7811" x2="20.4106" y2="43.307" width="0" layer="19" extent="1-1"/>
-<wire x1="33.8074" y1="34.8488" x2="31.0388" y2="42.2766" width="0" layer="19" extent="1-1"/>
-<wire x1="36.3474" y1="25.9588" x2="33.8074" y2="34.8488" width="0" layer="19" extent="1-1"/>
-<wire x1="28.7528" y1="24.6126" x2="36.3474" y2="25.9588" width="0" layer="19" extent="1-1"/>
-<wire x1="21.5646" y1="17.8816" x2="28.7528" y2="24.6126" width="0" layer="19" extent="1-16"/>
-<wire x1="16.1798" y1="18.9848" x2="21.5646" y2="17.8816" width="0" layer="19" extent="16-16"/>
-<wire x1="14.7955" y1="18.3388" x2="16.1798" y2="18.9848" width="0" layer="19" extent="16-16"/>
-<wire x1="10.2616" y1="40.1574" x2="19.35819375" y2="45.4406" width="0" layer="19" extent="16-16"/>
+<wire x1="21.5646" y1="19.1516" x2="16.1798" y2="18.9848" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="CAN_TXD">
 <contactref element="CAN_CONTROL" pad="1"/>

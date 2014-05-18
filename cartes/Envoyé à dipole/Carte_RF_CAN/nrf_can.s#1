@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3168,6 +3168,11 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="CAN" gate="G$1" pin="2"/>
 </segment>
 <segment>
+<pinref part="TRANSCEIVER" gate="G$1" pin="VSS"/>
+<wire x1="-25.4" y1="40.64" x2="-12.7" y2="40.64" width="0.1524" layer="91"/>
+<label x="-25.4" y="40.64" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="ARDUINO_MINI" gate="G$1" pin="VCC"/>
 <wire x1="7.62" y1="101.6" x2="17.78" y2="101.6" width="0.1524" layer="91"/>
 <label x="15.24" y="101.6" size="1.778" layer="95"/>
@@ -3184,17 +3189,17 @@ In this library the device names are the same as the pin names of the symbols, t
 <junction x="48.26" y="88.9"/>
 <label x="40.64" y="88.9" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="TRANSCEIVER" gate="G$1" pin="VDD"/>
-<wire x1="-12.7" y1="38.1" x2="-20.32" y2="38.1" width="0.1524" layer="91"/>
-<label x="-25.4" y="38.1" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <wire x1="60.96" y1="20.32" x2="55.88" y2="20.32" width="0.1524" layer="91"/>
 <label x="53.34" y="20.32" size="1.778" layer="95"/>
 <pinref part="CAN_CONTROL" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="TRANSCEIVER" gate="G$1" pin="VDD"/>
+<wire x1="-12.7" y1="38.1" x2="-20.32" y2="38.1" width="0.1524" layer="91"/>
+<label x="-25.4" y="38.1" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -3239,11 +3244,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="3.3V" gate="G$1" pin="GND"/>
 <wire x1="50.8" y1="83.82" x2="43.18" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<pinref part="TRANSCEIVER" gate="G$1" pin="VSS"/>
-<wire x1="-25.4" y1="40.64" x2="-12.7" y2="40.64" width="0.1524" layer="91"/>
-<label x="-25.4" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CAN_TXD" class="0">
