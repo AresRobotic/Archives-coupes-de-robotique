@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5700,11 +5700,6 @@ design rules for Dipole electronique, see http://www.dipole-electronique.fr/?pag
 <attribute name="MPN" value="SN65HVD08D" x="45.836840625" y="29.977084375" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="SUPPLIER" value="Texas Instruments" x="45.836840625" y="29.977084375" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="OC_FARNELL" value="1212360" x="45.836840625" y="29.977084375" size="1.778" layer="28" rot="MR0" display="off"/>
-</element>
-<element name="C5" library="SparkFun-Capacitors" package="0805" value="22pF" x="14.3129" y="23.860759375">
-<attribute name="MPN" value="08055A220JAT2A" x="14.3129" y="23.860759375" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="AVX" x="14.3129" y="23.860759375" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="2280675RL" x="14.3129" y="23.860759375" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
