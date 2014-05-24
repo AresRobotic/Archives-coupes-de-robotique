@@ -12,7 +12,7 @@
  * 
  */
 
-_FOSC(CSW_FSCM_OFF & XT_PLL16);  // Fosc=16x8/4MHz, Fcy=32MHz
+_FOSC(CSW_FSCM_OFF & XT_PLL8);  // Fosc=8x8/4MHz, Fcy=16MHz
 _FWDT(WDT_OFF);                   // Watchdog timer off
 _FBORPOR(MCLR_EN & PWRT_64);     /* Enable MCLR reset pin and turn off the power-up timers. */
 _FGS(CODE_PROT_OFF);              /* Disable Code Protection */
@@ -26,36 +26,36 @@ void initUART(unsigned int b);
 
 int main(void)
 {
-    char data[] = {0x05 ,0x03 ,0x04 ,0x07 ,0x00};
-    unsigned int i,r,b=0;
+    //char data[] = {0x05 ,0x03 ,0x04 ,0x07 ,0x00};
+    unsigned int i,r;//,b=0;
 
-    
-    //AX12setSpeed(1,0x005F);
+    initUART(3);
+    AX12setSpeed(0xFE,0x005F);
 
     while(1)
     {
-	/*for(i=0;i<32000;i++)for(r=0;r<160;r++);
-	AX12moveTo(1,0x0000);
 	for(i=0;i<32000;i++)for(r=0;r<160;r++);
-	AX12setSpeed(1,0x00FF);
+	AX12moveTo(0xFE,0x0000);
+	for(i=0;i<32000;i++)for(r=0;r<160;r++);
+	AX12setSpeed(0xFE,0x00FF);
 	for(i=0;i<32000;i++)for(r=0;r<160;r++);
 
-	AX12setSpeed(1,0x005F);
+	AX12setSpeed(0xFE,0x005F);
 	for(i=0;i<32000;i++)for(r=0;r<160;r++);
-	AX12moveTo(1,0x03FF);
+	AX12moveTo(0xFE,0x03FF);
 	for(i=0;i<32000;i++)for(r=0;r<160;r++);
-	AX12setSpeed(1,0x00FF);
-	for(i=0;i<32000;i++)for(r=0;r<160;r++);*/
+	AX12setSpeed(0xFE,0x00FF);
+	for(i=0;i<32000;i++)for(r=0;r<160;r++);
 
-	for(b=0;b<300;b++)
+	/*for(b=0;b<300;b++)
 	{
-	    initUART(b); // Ferme et réouvre l'URAT
+	     // Ferme et réouvre l'URAT
 	    sendToAX12(0xFE,data,5);
 	    for(i=0;i<32000;i++)for(r=0;r<10;r++);
 	    initUART(7); // Ferme et réouvre l'URAT en 250K
 	    AX12moveTo(0xFE,0x03FF);
 	    for(i=0;i<32000;i++)for(r=0;r<10;r++);
-	}
+	}*/
     }
     
     return 0;
