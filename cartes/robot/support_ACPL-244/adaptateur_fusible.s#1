@@ -5557,9 +5557,9 @@ Source: www.kingbright.com</description>
 <label x="-156.845" y="30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-77.47" y1="-7.62" x2="-88.265" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-76.835" y1="-7.62" x2="-88.265" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-88.265" y1="-7.62" x2="-88.265" y2="-6.985" width="0.1524" layer="91"/>
 <label x="-92.71" y="-7.62" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="A2"/>
 </segment>
 </net>
 <net name="C_DIR1" class="0">
