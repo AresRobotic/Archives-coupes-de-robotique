@@ -24,6 +24,7 @@ unsigned int svm_conter = 0;
 int main()
 {
     timer1_init();
+
     
     SVM_1_TRIS = 0;
     while(1);
