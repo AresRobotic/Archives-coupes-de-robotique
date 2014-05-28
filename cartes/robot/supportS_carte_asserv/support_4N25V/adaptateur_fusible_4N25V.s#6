@@ -5754,8 +5754,10 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 <net name="C_DIR2" class="0">
 <segment>
 <pinref part="INPUT" gate="G$1" pin="7"/>
-<wire x1="-172.085" y1="33.02" x2="-177.165" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-172.085" y1="33.02" x2="-172.72" y2="33.02" width="0.1524" layer="91"/>
 <label x="-177.165" y="33.02" size="1.778" layer="95" rot="R180"/>
+<junction x="-172.72" y="33.02"/>
+<wire x1="-172.72" y1="33.02" x2="-177.165" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="OK3" gate="G$1" pin="A"/>
@@ -5778,8 +5780,10 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 <net name="C_DIR1" class="0">
 <segment>
 <pinref part="INPUT" gate="G$1" pin="5"/>
-<wire x1="-172.085" y1="30.48" x2="-177.165" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-172.085" y1="30.48" x2="-172.72" y2="30.48" width="0.1524" layer="91"/>
 <label x="-177.165" y="30.48" size="1.778" layer="95" rot="R180"/>
+<junction x="-172.72" y="30.48"/>
+<wire x1="-172.72" y1="30.48" x2="-177.165" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -5882,6 +5886,7 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 <pinref part="OK4" gate="G$1" pin="C"/>
 <wire x1="-71.12" y1="-101.6" x2="-76.2" y2="-101.6" width="0.1524" layer="91"/>
 <junction x="-76.2" y="-101.6"/>
+<junction x="-71.12" y="-101.6"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -5889,6 +5894,7 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 <pinref part="OK3" gate="G$1" pin="C"/>
 <wire x1="-71.12" y1="-81.28" x2="-76.2" y2="-81.28" width="0.1524" layer="91"/>
 <junction x="-76.2" y="-81.28"/>
+<junction x="-71.12" y="-81.28"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -5896,6 +5902,7 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 <pinref part="OK2" gate="G$1" pin="C"/>
 <wire x1="-71.12" y1="-63.5" x2="-76.2" y2="-63.5" width="0.1524" layer="91"/>
 <junction x="-76.2" y="-63.5"/>
+<junction x="-71.12" y="-63.5"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -5903,6 +5910,7 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 <pinref part="OK1" gate="G$1" pin="C"/>
 <wire x1="-71.12" y1="-43.18" x2="-76.2" y2="-43.18" width="0.1524" layer="91"/>
 <junction x="-76.2" y="-43.18"/>
+<junction x="-71.12" y="-43.18"/>
 </segment>
 </net>
 <net name="N$19" class="0">

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -5641,10 +5641,10 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 <instance part="P+2" gate="1" x="31.75" y="15.875" rot="R180"/>
 <instance part="GND3" gate="1" x="31.75" y="46.355" rot="R180"/>
 <instance part="F3" gate="G$1" x="-2.54" y="-5.08"/>
-<instance part="OK1" gate="G$1" x="-60.96" y="-38.1"/>
-<instance part="OK2" gate="G$1" x="-60.96" y="-58.42"/>
+<instance part="OK1" gate="G$1" x="-58.42" y="-38.1"/>
+<instance part="OK2" gate="G$1" x="-58.42" y="-58.42"/>
 <instance part="OK3" gate="G$1" x="-60.96" y="-76.2"/>
-<instance part="OK4" gate="G$1" x="-60.96" y="-96.52"/>
+<instance part="OK4" gate="G$1" x="-58.42" y="-96.52"/>
 <instance part="GND7" gate="1" x="-85.09" y="-45.72"/>
 <instance part="R11" gate="G$1" x="-77.47" y="-43.18" rot="R180"/>
 <instance part="GND8" gate="1" x="-85.09" y="-66.04"/>
@@ -5735,7 +5735,7 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 </segment>
 <segment>
 <pinref part="OK4" gate="G$1" pin="A"/>
-<wire x1="-71.12" y1="-93.98" x2="-83.82" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-93.98" x2="-83.82" y2="-93.98" width="0.1524" layer="91"/>
 <label x="-81.28" y="-96.52" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -5761,7 +5761,7 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 </segment>
 <segment>
 <pinref part="OK2" gate="G$1" pin="A"/>
-<wire x1="-71.12" y1="-55.88" x2="-78.74" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-68.58" y1="-55.88" x2="-78.74" y2="-55.88" width="0.1524" layer="91"/>
 <label x="-78.74" y="-58.42" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -5856,36 +5856,42 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 <label x="-17.78" y="-4.445" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-38.1" y1="-38.1" x2="-53.34" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="-38.1" x2="-50.8" y2="-38.1" width="0.1524" layer="91"/>
 <label x="-40.64" y="-37.465" size="1.778" layer="95"/>
+<pinref part="OK1" gate="G$1" pin="COL"/>
 </segment>
 <segment>
-<wire x1="-38.1" y1="-58.42" x2="-53.34" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="-58.42" x2="-50.8" y2="-58.42" width="0.1524" layer="91"/>
 <label x="-40.64" y="-57.785" size="1.778" layer="95"/>
+<pinref part="OK2" gate="G$1" pin="COL"/>
+<wire x1="-50.8" y1="-58.42" x2="-53.34" y2="-58.42" width="0.1524" layer="91"/>
+<junction x="-50.8" y="-58.42"/>
 </segment>
 <segment>
 <wire x1="-38.1" y1="-76.2" x2="-53.34" y2="-76.2" width="0.1524" layer="91"/>
 <label x="-40.64" y="-75.565" size="1.778" layer="95"/>
+<pinref part="OK3" gate="G$1" pin="COL"/>
 </segment>
 <segment>
-<wire x1="-38.1" y1="-96.52" x2="-53.34" y2="-96.52" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="-96.52" x2="-50.8" y2="-96.52" width="0.1524" layer="91"/>
 <label x="-40.64" y="-95.885" size="1.778" layer="95"/>
+<pinref part="OK4" gate="G$1" pin="COL"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="R16" gate="G$1" pin="2"/>
-<wire x1="-48.895" y1="-43.18" x2="-53.34" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="-48.895" y1="-43.18" x2="-50.8" y2="-43.18" width="0.1524" layer="91"/>
 <pinref part="OK1" gate="G$1" pin="EMI"/>
-<junction x="-53.34" y="-43.18"/>
+<junction x="-50.8" y="-43.18"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="R17" gate="G$1" pin="2"/>
-<wire x1="-48.895" y1="-63.5" x2="-53.34" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="-48.895" y1="-63.5" x2="-50.8" y2="-63.5" width="0.1524" layer="91"/>
 <pinref part="OK2" gate="G$1" pin="EMI"/>
-<junction x="-53.34" y="-63.5"/>
+<junction x="-50.8" y="-63.5"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -5899,31 +5905,31 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 <net name="N$22" class="0">
 <segment>
 <pinref part="R19" gate="G$1" pin="2"/>
-<wire x1="-48.895" y1="-101.6" x2="-53.34" y2="-101.6" width="0.1524" layer="91"/>
+<wire x1="-48.895" y1="-101.6" x2="-50.8" y2="-101.6" width="0.1524" layer="91"/>
 <pinref part="OK4" gate="G$1" pin="EMI"/>
-<junction x="-53.34" y="-101.6"/>
+<junction x="-50.8" y="-101.6"/>
 </segment>
 </net>
 <net name="C_DIR" class="0">
 <segment>
-<wire x1="-68.58" y1="-35.56" x2="-78.74" y2="-35.56" width="0.1524" layer="91"/>
 <label x="-78.74" y="-38.1" size="1.778" layer="95"/>
+<pinref part="OK1" gate="G$1" pin="A"/>
+<wire x1="-68.58" y1="-35.56" x2="-81.28" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="-68.58" y="-35.56"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="OK1" gate="G$1" pin="C"/>
 <pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="-72.39" y1="-43.18" x2="-71.12" y2="-43.18" width="0.1524" layer="91"/>
-<label x="-71.12" y="-45.72" size="1.778" layer="95" rot="R180"/>
+<wire x1="-72.39" y1="-43.18" x2="-68.58" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="OK2" gate="G$1" pin="C"/>
 <pinref part="R12" gate="G$1" pin="1"/>
-<wire x1="-72.39" y1="-63.5" x2="-71.12" y2="-63.5" width="0.1524" layer="91"/>
-<label x="-71.12" y="-67.31" size="1.778" layer="95" rot="R180"/>
+<wire x1="-72.39" y1="-63.5" x2="-68.58" y2="-63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -5931,15 +5937,13 @@ Source: http://www.fairchildsemi.com/ds/4N/4N35-M.pdf</description>
 <pinref part="OK3" gate="G$1" pin="C"/>
 <pinref part="R14" gate="G$1" pin="1"/>
 <wire x1="-73.66" y1="-81.28" x2="-71.12" y2="-81.28" width="0.1524" layer="91"/>
-<label x="-71.12" y="-85.09" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="OK4" gate="G$1" pin="C"/>
 <pinref part="R15" gate="G$1" pin="1"/>
-<wire x1="-73.66" y1="-101.6" x2="-71.12" y2="-101.6" width="0.1524" layer="91"/>
-<label x="-71.12" y="-106.68" size="1.778" layer="95" rot="R180"/>
+<wire x1="-73.66" y1="-101.6" x2="-68.58" y2="-101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

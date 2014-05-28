@@ -1621,6 +1621,10 @@ design rules under a new name.</description>
 <element name="R13" library="rcl" package="M0805" value="1k" x="-4.445" y="-69.215"/>
 <element name="R14" library="rcl" package="M0805" value="1k" x="-4.445" y="-75.565"/>
 <element name="R15" library="rcl" package="M0805" value="1k" x="-4.445" y="-81.915"/>
+<element name="R16" library="rcl" package="M0805" value="470" x="-4.445" y="-88.265"/>
+<element name="R17" library="rcl" package="M0805" value="470" x="-4.445" y="-94.615"/>
+<element name="R18" library="rcl" package="M0805" value="470" x="-4.445" y="-100.965"/>
+<element name="R19" library="rcl" package="M0805" value="470" x="-4.445" y="-107.315"/>
 </elements>
 <signals>
 <signal name="DIR1">
@@ -1642,6 +1646,14 @@ design rules under a new name.</description>
 <wire x1="23.495" y1="30.48" x2="23.495" y2="28.575" width="0.8128" layer="1"/>
 <wire x1="23.495" y1="28.575" x2="24.765" y2="27.305" width="0.8128" layer="1"/>
 <wire x1="24.765" y1="27.305" x2="24.765" y2="25.715" width="0.8128" layer="1"/>
+<contactref element="R16" pad="1"/>
+<contactref element="R17" pad="1"/>
+<contactref element="R18" pad="1"/>
+<contactref element="R19" pad="1"/>
+<wire x1="-5.395" y1="-100.965" x2="-5.395" y2="-107.315" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.395" y1="-94.615" x2="-5.395" y2="-100.965" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.395" y1="-88.265" x2="-5.395" y2="-94.615" width="0" layer="19" extent="1-1"/>
+<wire x1="24.765" y1="25.715" x2="-5.395" y2="-88.265" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PWM1">
 <contactref element="INPUT1" pad="4"/>
@@ -1870,6 +1882,38 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="11"/>
 <contactref element="R9" pad="2"/>
 <wire x1="22.225" y1="23.815" x2="22.225" y2="19.05" width="0.8128" layer="1"/>
+</signal>
+<signal name="N$9">
+<contactref element="OK4" pad="2"/>
+</signal>
+<signal name="N$15">
+<contactref element="OK3" pad="2"/>
+</signal>
+<signal name="N$17">
+<contactref element="OK2" pad="2"/>
+</signal>
+<signal name="N$18">
+<contactref element="OK1" pad="2"/>
+</signal>
+<signal name="N$19">
+<contactref element="R16" pad="2"/>
+<contactref element="OK1" pad="4"/>
+<wire x1="3.175" y1="-8.69" x2="-3.495" y2="-88.265" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$20">
+<contactref element="R17" pad="2"/>
+<contactref element="OK2" pad="4"/>
+<wire x1="3.175" y1="-20.12" x2="-3.495" y2="-94.615" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$21">
+<contactref element="R18" pad="2"/>
+<contactref element="OK3" pad="4"/>
+<wire x1="3.175" y1="-31.55" x2="-3.495" y2="-100.965" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$22">
+<contactref element="R19" pad="2"/>
+<contactref element="OK4" pad="4"/>
+<wire x1="3.175" y1="-42.98" x2="-3.495" y2="-107.315" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
