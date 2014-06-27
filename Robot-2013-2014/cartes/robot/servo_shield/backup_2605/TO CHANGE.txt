@@ -1,0 +1,3 @@
+* ajouter résistance pullup de 10k entre data et 12V sur l'AX12
+* Connecteur carte puissance à revoir : micromatch 6p ?
+* 
