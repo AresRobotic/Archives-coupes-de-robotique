@@ -1,0 +1,9 @@
+
+DISPLAY ALL
+RATSNEST
+DISPLAY None
+DISPLAY Top Pads Vias Dimension Unrouted
+PRINT FILE %N.top.pdf MIRROR BLACK SOLID;
+DISPLAY None
+DISPLAY Bottom Pads Vias Dimension Unrouted
+PRINT FILE %N.bottom.pdf BLACK SOLID;
